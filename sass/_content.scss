@@ -1,0 +1,40 @@
+.text { 
+
+	h2 { color: $h2-color; }
+	h3 { color: $h3-color; }
+	h4 { color: $h4-color; }
+
+	ul, ol { margin-left: 54px; }
+	
+	ul > li, ol > li {
+		line-height: $line-height-text;
+	}
+}
+
+.font-color--red {
+	color: $font-color-red;
+}
+
+#color-scheme {
+	
+	.color {
+		height: 81px;
+		width: 81px;
+		float: left;
+		text-align: center;
+		margin: 0 auto;
+
+		.color__example {
+			height: 50px;
+			width: 50px;
+			margin-left: 15px;
+			font-weight: bold;
+			color: $font-color-grey3;
+			border: 1px solid white;
+		}
+		
+		.color__code {
+			margin-top: 5px;
+		}
+	}	
+}

@@ -1,0 +1,34 @@
+/* ==============================
+	Font
+============================== */
+$font-size: 18px;
+$font-family: Calibri;
+$line-height-text: 1.5;
+
+
+/* ==============================
+	Colors
+============================== */
+$bg-color: #222;
+$bg-color-grey1: #2A2A2A;
+
+$font-color: #CCC;
+$font-color-grey1: darken($font-color, 20%);
+$font-color-grey2: darken($font-color-grey1, 10%);
+$font-color-grey3: darken($font-color-grey2, 10%);
+$font-color-red: #833;
+
+$h2-color: $font-color-grey1;
+$h3-color: $font-color-grey2;
+$h4-color: $font-color-grey3;
+
+$link-color: #296DDB;
+$link-color-active: lighten($link-color, 10%); 
+$link-color-visited: #999999; 
+$link-color-visited-active: lighten($link-color-visited, 10%);
+
+
+/* ==============================
+	Radiuses
+============================== */
+$radius: 5px;

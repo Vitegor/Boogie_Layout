@@ -1,0 +1,10 @@
+@mixin h-setting ($font-size, $margin-bottom) {
+	font-size: $font-size;
+	margin-bottom: $margin-bottom;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}

@@ -1,0 +1,17 @@
+#header {
+	height: 81px;
+	width: 100%;
+	
+	#logo {
+		height: 100%;
+		padding-right: 27px;
+		padding-left: 27px;	
+		background-color: $bg-color-grey1;
+		border-bottom-left-radius: $radius;
+		border-bottom-right-radius: $radius;
+		font-size: 56px;
+		line-height: 81px;
+		font-weight: bold;
+		color: $font-color;
+	}	
+}
