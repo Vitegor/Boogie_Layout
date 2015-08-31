@@ -29,6 +29,12 @@ $link-color-visited-active: lighten($link-color-visited, 10%);
 
 
 /* ==============================
+	Sizes
+============================== */
+$base-line-height: 27px;
+$base-padding: $base-line-height;
+
+/* ==============================
 	Radiuses
 ============================== */
 $radius: 5px;
