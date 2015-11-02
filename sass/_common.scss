@@ -1,21 +1,47 @@
+/* ==============================
+	Common
+============================== */
 body {
 	font-size: $font-size;
 	font-family: $font-family;
-	background-color: $bg-color;
-	color: $font-color;
+	background-color: $black;
+	color: $white;
 }
 
 html, body {
 	height: 100%; 
-	line-height: $line-height-text;
+	line-height: $line-height;
 }
 
+#wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#content-wrapper {
+	display: table-row;
+	height: 100%;
+	line-height: 1em;
+}
+
+#content {
+	max-width: 1141px;
+	margin: 0 auto;
+}
+
+#sidebar { margin-left: $indent; }
+
+
+/* ==============================
+	Typography
+============================== */
 h1, h2, h3, h4 {
 	font-weight: bold;
 }
 
 h1, h2, h3 {
-	line-height: $base-line-height;
+	line-height: $line-height;
 }
 
 h1 { font-size: 2.5em; }
@@ -24,65 +50,82 @@ h3 { font-size: 1.5em; }
 h4 { @include h-setting(1.2em, 9px); }
 
 p {
-	line-height: $line-height-text;	
+	line-height: $line-height;
 	margin-top: 27px;
 }
 
 a {
 	text-decoration: none;
-	color: $link-color;
-	border-bottom: 1px dashed $link-color;
+	color: $blue;
+	border-bottom: 1px dashed $blue;
 
 	&:hover {
 		border-bottom: none;
 	}
 
 	&:active {
-		color: $link-color-active;
+		color: $blue-darken;
+		border-bottom: 1px dashed $blue-darken;
 	}
 
 	&:visited {
-		color: $link-color-visited;
-		border-color: $link-color-visited;
+		color: $grey-lighten;
+		border-color: $grey-lighten;
 
 		&:active {
-			color: $link-color-visited-active;
+			color: $blue-darken;
+			border-bottom: 1px dashed $blue-darken;
 		}
 	}
 }
 
-#wrapper {
-	display: table;
-	height: 100%;
-	width: 1140px;
-	margin: 0 auto;
-	margin-top: $base-padding;
+.page-title {
+	margin-bottom: $indent;
 }
 
-#sidebar {
-	float: left;
-}
 
-#main {
-	display: table-row;
-	height: 100%; 
-	float: right; 
-	line-height: 1em;
-}
+/* ==============================
+	Blocks
+============================== */
+.block {
+	margin-top: $indent;
+	padding: $indent;
+	background-color: $black-lighten;
+	box-sizing: border-box;
 
-	.content-block {
-		margin-top: $base-padding;
-		padding: $base-padding;
-		background-color: $bg-color-grey1;
-		box-sizing: border-box;
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
 	}
-
-
+}
 
 .clear-fix:after {
-	content: '';
+	content: "";
 	display: block;
 	clear: both;
 	height: 0px;
 	visibility: hidden;
 }
+
+
+/* ==============================
+	For delete
+============================== */
+.bg-color-red { background-color: $red; }
+.bg-color-red-lighten { background-color: $red-lighten; }
+.bg-color-red-darken { background-color: $red-darken; }
+
+.bg-color-blue { background-color: $blue; }
+.bg-color-blue-lighten { background-color: $blue-lighten; }
+.bg-color-blue-darken { background-color: $blue-darken; }
+
+.bg-color-grey { background-color: $grey; }
+.bg-color-grey-lighten { background-color: $grey-lighten; }
+.bg-color-grey-darken { background-color: $grey-darken; }
+
+.bg-color-black { background-color: $black; }
+.bg-color-black-lighten { background-color: $black-lighten; }
+.bg-color-black-darken { background-color: $black-darken; }
+
+.bg-color-white { background-color: $white; }

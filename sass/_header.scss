@@ -1,14 +1,11 @@
-#header {
-	height: 81px;
-	
-	#logo {
-		height: 100%;
-		padding-right: 27px;
-		padding-left: 27px;	
-		background-color: $bg-color-grey1;
-		font-size: 56px;
-		line-height: 81px;
-		font-weight: bold;
-		color: $font-color;
-	}	
+#header { height: 81px; }
+
+#logo {
+	height: 100%;
+	padding-right: 27px;
+	padding-left: 27px;
+	background-color: $black-lighten;
+	font-size: 56px;
+	line-height: 81px;
+	color: $white;
 }

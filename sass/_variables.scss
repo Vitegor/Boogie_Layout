@@ -3,36 +3,37 @@
 ============================== */
 $font-size: 18px;
 $font-family: Calibri;
-$line-height-text: 1.5;
+$line-height-text: 1.5em;
 
 
 /* ==============================
 	Colors
 ============================== */
-$bg-color: #222;
-$bg-color-grey1: #2A2A2A;
+$red: #833;
+$red-lighten: lighten($red, 10%);
+$red-darken: darken($red, 10%);
 
-$font-color: #CCC;
-$font-color-grey1: darken($font-color, 20%);
-$font-color-grey2: darken($font-color-grey1, 10%);
-$font-color-grey3: darken($font-color-grey2, 10%);
-$font-color-red: #833;
+$blue: #296ddb;
+$blue-lighten: lighten($blue, 12%);
+$blue-darken: darken($blue, 15%);
 
-$h2-color: $font-color-grey1;
-$h3-color: $font-color-grey2;
-$h4-color: $font-color-grey3;
+$grey: #808080;
+$grey-lighten: #999;
+$grey-darken: #666;
 
-$link-color: #296DDB;
-$link-color-active: lighten($link-color, 10%); 
-$link-color-visited: #999999; 
-$link-color-visited-active: lighten($link-color-visited, 10%);
+$black: #222;
+$black-lighten: #2a2a2a;
+$black-darken: darken($black, 3%);
+
+$white: #ccc;
 
 
 /* ==============================
 	Sizes
 ============================== */
-$base-line-height: 27px;
-$base-padding: $base-line-height;
+$indent: 27px;
+$line-height: $indent;
+
 
 /* ==============================
 	Radiuses

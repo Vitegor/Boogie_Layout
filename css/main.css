@@ -47,44 +47,53 @@ table {
 /* ==============================
 	Radiuses
 ============================== */
-.col-4 {
-  width: 25%; }
+.col-11 {
+  width: 776px; }
 
-.col-8 {
-  width: 50%; }
+.col-5 {
+  width: 338px; }
 
-.col-12 {
-  width: 75%; }
-
-.col-16 {
-  width: 100%; }
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10 {
+.col-11,
+.col-5 {
   float: left;
   box-sizing: border-box; }
 
 .row:after {
   clear: both; }
 
+/* ==============================
+	Common
+============================== */
 body {
   font-size: 18px;
   font-family: Calibri;
   background-color: #222;
-  color: #CCC; }
+  color: #ccc; }
 
 html, body {
   height: 100%;
-  line-height: 1.5; }
+  line-height: 27px; }
 
+#wrapper {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+#content-wrapper {
+  display: table-row;
+  height: 100%;
+  line-height: 1em; }
+
+#content {
+  max-width: 1141px;
+  margin: 0 auto; }
+
+#sidebar {
+  margin-left: 27px; }
+
+/* ==============================
+	Typography
+============================== */
 h1, h2, h3, h4 {
   font-weight: bold; }
 
@@ -105,100 +114,123 @@ h4 {
   margin-bottom: 9px; }
 
 p {
-  line-height: 1.5;
+  line-height: 27px;
   margin-top: 27px; }
 
 a {
   text-decoration: none;
-  color: #296DDB;
-  border-bottom: 1px dashed #296DDB; }
+  color: #296ddb;
+  border-bottom: 1px dashed #296ddb; }
   a:hover {
     border-bottom: none; }
   a:active {
-    color: #558be2; }
+    color: #1a4c9d;
+    border-bottom: 1px dashed #1a4c9d; }
   a:visited {
-    color: #999999;
-    border-color: #999999; }
+    color: #999;
+    border-color: #999; }
     a:visited:active {
-      color: #b3b3b3; }
+      color: #1a4c9d;
+      border-bottom: 1px dashed #1a4c9d; }
 
-#wrapper {
-  display: table;
-  height: 100%;
-  width: 1140px;
-  margin: 0 auto;
-  margin-top: 27px; }
+.page-title {
+  margin-bottom: 27px; }
 
-#sidebar {
-  float: left; }
-
-#main {
-  display: table-row;
-  height: 100%;
-  float: right;
-  line-height: 1em; }
-
-.content-block {
+/* ==============================
+	Blocks
+============================== */
+.block {
   margin-top: 27px;
   padding: 27px;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   box-sizing: border-box; }
+  .block:after {
+    display: block;
+    content: "";
+    clear: both; }
 
 .clear-fix:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
   height: 0px;
   visibility: hidden; }
 
+/* ==============================
+	For delete
+============================== */
+.bg-color-red {
+  background-color: #833; }
+
+.bg-color-red-lighten {
+  background-color: #ad4141; }
+
+.bg-color-red-darken {
+  background-color: #632525; }
+
+.bg-color-blue {
+  background-color: #296ddb; }
+
+.bg-color-blue-lighten {
+  background-color: #5d91e4; }
+
+.bg-color-blue-darken {
+  background-color: #1a4c9d; }
+
+.bg-color-grey {
+  background-color: #808080; }
+
+.bg-color-grey-lighten {
+  background-color: #999; }
+
+.bg-color-grey-darken {
+  background-color: #666; }
+
+.bg-color-black {
+  background-color: #222; }
+
+.bg-color-black-lighten {
+  background-color: #2a2a2a; }
+
+.bg-color-black-darken {
+  background-color: #1a1a1a; }
+
+.bg-color-white {
+  background-color: #ccc; }
+
 #header {
   height: 81px; }
-  #header #logo {
-    height: 100%;
-    padding-right: 27px;
-    padding-left: 27px;
-    background-color: #2A2A2A;
-    font-size: 56px;
-    line-height: 81px;
-    font-weight: bold;
-    color: #CCC; }
+
+#logo {
+  height: 100%;
+  padding-right: 27px;
+  padding-left: 27px;
+  background-color: #2a2a2a;
+  font-size: 56px;
+  line-height: 81px;
+  color: #ccc; }
 
 .text h2 {
-  color: #999999; }
+  color: #999; }
 .text h3 {
-  color: gray; }
+  color: #808080; }
 .text h4 {
-  color: #666666; }
+  color: #666; }
 .text ul, .text ol {
   margin-left: 54px; }
 .text ul > li, .text ol > li {
-  line-height: 1.5; }
+  line-height: 1.5em; }
 
-.font-color--red {
+.text-red {
   color: #833; }
-
-#color-scheme .color {
-  height: 81px;
-  width: 81px;
-  float: left;
-  text-align: center;
-  margin: 0 auto; }
-  #color-scheme .color .color__example {
-    height: 50px;
-    width: 50px;
-    margin-left: 15px;
-    font-weight: bold;
-    color: #666666;
-    border: 1px solid white; }
-  #color-scheme .color .color__code {
-    margin-top: 5px; }
 
 #footer {
   margin-top: 27px;
   padding: 27px;
-  background-color: #2A2A2A; }
-  #footer #copyright {
-    text-align: center;
-    color: #666666; }
+  background-color: #2a2a2a; }
 
-/*# sourceMappingURL=style.css.map */
+#copyright {
+  text-align: center;
+  color: #666; }
+
+/*# sourceMappingURL=main.css.map */
