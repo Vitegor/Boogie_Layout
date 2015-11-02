@@ -27,10 +27,17 @@ html, body {
 
 #content {
 	max-width: 1141px;
-	margin: 0 auto;
+	margin: $indent auto 0;
 }
 
-#sidebar { margin-left: $indent; }
+#main {
+	margin-right: 365px;
+}
+
+#sidebar {
+	width: 338px;
+	float: right;
+}
 
 
 /* ==============================
@@ -88,16 +95,10 @@ a {
 	Blocks
 ============================== */
 .block {
-	margin-top: $indent;
+	margin-bottom: $indent;
 	padding: $indent;
 	background-color: $black-lighten;
 	box-sizing: border-box;
-
-	&:after {
-		display: block;
-		content: "";
-		clear: both;
-	}
 }
 
 .clear-fix:after {

@@ -1,12 +1,11 @@
-.col-11 { width: 776px; }
-.col-5 { width: 338px; }
+.row:after {
+	clear: both;
+}
 
-.col-11,
-.col-5 {
+.col {
 	float: left;
 	box-sizing: border-box;
 }
 
-.row:after {
-	clear: both;
-}
+.col-11 { width: 776px; }
+.col-5 { width: 338px; }

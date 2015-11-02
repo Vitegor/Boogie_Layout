@@ -47,20 +47,6 @@ table {
 /* ==============================
 	Radiuses
 ============================== */
-.col-11 {
-  width: 776px; }
-
-.col-5 {
-  width: 338px; }
-
-.col-11,
-.col-5 {
-  float: left;
-  box-sizing: border-box; }
-
-.row:after {
-  clear: both; }
-
 /* ==============================
 	Common
 ============================== */
@@ -86,10 +72,14 @@ html, body {
 
 #content {
   max-width: 1141px;
-  margin: 0 auto; }
+  margin: 27px auto 0; }
+
+#main {
+  margin-right: 365px; }
 
 #sidebar {
-  margin-left: 27px; }
+  width: 338px;
+  float: right; }
 
 /* ==============================
 	Typography
@@ -140,14 +130,10 @@ a {
 	Blocks
 ============================== */
 .block {
-  margin-top: 27px;
+  margin-bottom: 27px;
   padding: 27px;
   background-color: #2a2a2a;
   box-sizing: border-box; }
-  .block:after {
-    display: block;
-    content: "";
-    clear: both; }
 
 .clear-fix:after {
   content: "";
@@ -225,12 +211,24 @@ a {
   color: #833; }
 
 #footer {
-  margin-top: 27px;
   padding: 27px;
   background-color: #2a2a2a; }
 
 #copyright {
   text-align: center;
   color: #666; }
+
+.row:after {
+  clear: both; }
+
+.col {
+  float: left;
+  box-sizing: border-box; }
+
+.col-11 {
+  width: 776px; }
+
+.col-5 {
+  width: 338px; }
 
 /*# sourceMappingURL=main.css.map */
