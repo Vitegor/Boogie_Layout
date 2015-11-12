@@ -67,29 +67,31 @@ html, body {
 
 #content-wrapper {
   display: table-row;
-  height: 100%;
-  line-height: 1em; }
+  height: 100%; }
 
 #content {
-  max-width: 1141px;
+  max-width: 1189px;
   margin: 27px auto 0; }
 
 #main {
-  margin-right: 365px; }
+  float: left;
+  width: calc(100% - 27px - 277px); }
 
 #sidebar {
-  width: 338px;
-  float: right; }
+  float: right;
+  width: 277px;
+  margin-left: 27px; }
 
+@media all and (max-width: 768px) {
+  #main {
+    margin-right: 0;
+    width: 100%; }
+
+  #sidebar {
+    width: 100%; } }
 /* ==============================
 	Typography
 ============================== */
-h1, h2, h3, h4 {
-  font-weight: bold; }
-
-h1, h2, h3 {
-  line-height: 27px; }
-
 h1 {
   font-size: 2.5em; }
 
@@ -104,7 +106,6 @@ h4 {
   margin-bottom: 9px; }
 
 p {
-  line-height: 27px;
   margin-top: 27px; }
 
 a {
@@ -143,7 +144,7 @@ a {
   visibility: hidden; }
 
 /* ==============================
-	For delete
+	FOR DELETE
 ============================== */
 .bg-color-red {
   background-color: #833; }
@@ -217,18 +218,5 @@ a {
 #copyright {
   text-align: center;
   color: #666; }
-
-.row:after {
-  clear: both; }
-
-.col {
-  float: left;
-  box-sizing: border-box; }
-
-.col-11 {
-  width: 776px; }
-
-.col-5 {
-  width: 338px; }
 
 /*# sourceMappingURL=main.css.map */
