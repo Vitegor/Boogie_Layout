@@ -43,6 +43,18 @@ html, body {
 	margin-left: $indent;
 }
 
+@media all and (max-width: 768px) {
+
+	#main, #sidebar {
+		float: none;
+		width: 100%;
+	}
+
+	#sidebar {
+		margin-left: 0;
+	}
+}
+
 
 /* ==============================
 	Typography
