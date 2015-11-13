@@ -1,10 +1,22 @@
 @mixin h-setting ($font-size, $margin-bottom) {
-	font-size: $font-size;
 	margin-bottom: $margin-bottom;
+	font-size: $font-size;
 }
 
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	border-radius: $radius;
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin display-flex() {
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin flex-direction($value) {
+	-webkit-flex-direction: $value;
+	-ms-flex-direction: $value;
+	flex-direction: $value;
 }
