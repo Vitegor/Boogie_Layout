@@ -61,17 +61,24 @@ html, body {
   line-height: 27px; }
 
 #wrapper {
-  display: table;
-  height: 100%;
-  width: 100%; }
-
-#content-wrapper {
-  display: table-row;
-  height: 100%; }
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh; }
 
 #content {
+  flex-grow: 1;
+  width: 100%;
   max-width: 1189px;
   margin: 27px auto 0; }
+
+#content::after {
+  content: "";
+  display: block;
+  clear: both; }
 
 #main {
   float: left;
@@ -82,13 +89,6 @@ html, body {
   width: 277px;
   margin-left: 27px; }
 
-@media all and (max-width: 768px) {
-  #main {
-    margin-right: 0;
-    width: 100%; }
-
-  #sidebar {
-    width: 100%; } }
 /* ==============================
 	Typography
 ============================== */
@@ -102,8 +102,8 @@ h3 {
   font-size: 1.5em; }
 
 h4 {
-  font-size: 1.2em;
-  margin-bottom: 9px; }
+  margin-bottom: 9px;
+  font-size: 1.2em; }
 
 p {
   margin-top: 27px; }
