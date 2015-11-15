@@ -67,6 +67,7 @@ html, body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
   min-height: 100vh; }
 
 #content {
@@ -103,6 +104,7 @@ h1 {
   font-size: 2.5em; }
 
 h2 {
+  margin-bottom: 27px;
   font-size: 2em; }
 
 h3 {
@@ -117,17 +119,20 @@ p {
 
 a {
   text-decoration: none;
+  color: #ccc; }
+
+.link {
   color: #296ddb;
   border-bottom: 1px dashed #296ddb; }
-  a:hover {
+  .link:hover {
     border-bottom: none; }
-  a:active {
+  .link:active {
     color: #1a4c9d;
     border-bottom: 1px dashed #1a4c9d; }
-  a:visited {
+  .link:visited {
     color: #999;
     border-color: #999; }
-    a:visited:active {
+    .link:visited:active {
       color: #1a4c9d;
       border-bottom: 1px dashed #1a4c9d; }
 
@@ -192,9 +197,6 @@ a {
 .bg-color-white {
   background-color: #ccc; }
 
-#header {
-  height: 81px; }
-
 #logo {
   height: 100%;
   padding-right: 27px;
@@ -204,6 +206,9 @@ a {
   line-height: 81px;
   color: #ccc; }
 
+/* ==============================
+	Text
+============================== */
 .text h2 {
   color: #999; }
 .text h3 {
@@ -212,11 +217,64 @@ a {
   color: #666; }
 .text ul, .text ol {
   margin-left: 54px; }
-.text ul > li, .text ol > li {
+.text ul > li,
+.text ol > li {
   line-height: 1.5em; }
 
 .text-red {
   color: #833; }
+
+/* ==============================
+	News
+============================== */
+.news > header,
+.news-body {
+  margin-bottom: 27px; }
+
+.news-title > a:hover {
+  color: #808080; }
+
+.tag {
+  display: inline-block;
+  height: 27px;
+  margin-right: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #808080;
+  border-bottom: none;
+  background-color: #343434; }
+
+.tag:hover {
+  background-color: #222; }
+
+.news .author,
+.news .datetime {
+  display: inline-block;
+  vertical-align: text-top;
+  color: #808080; }
+
+.news .author-icon,
+.news .clock-icon {
+  margin-right: 5px; }
+
+.datetime {
+  margin-left: 27px; }
+
+/* ==============================
+	Icons
+============================== */
+.icon {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  background-size: cover; }
+
+.author-icon {
+  background-image: url(../img/author-icon.svg); }
+
+.clock-icon {
+  background-image: url(../img/clock-icon.svg); }
 
 #footer {
   padding: 27px;

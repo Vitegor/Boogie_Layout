@@ -1,3 +1,6 @@
+/* ==============================
+	Text
+============================== */
 .text {
 	h2 { color: $grey-lighten; }
 	h3 { color: $grey; }
@@ -5,11 +8,75 @@
 
 	ul, ol { margin-left: 54px; }
 
-	ul > li, ol > li {
+	ul > li, 
+	ol > li {
 		line-height: $line-height-text;
 	}
 }
 
 .text-red {
 	color: $red;
+}
+
+
+/* ==============================
+	News
+============================== */
+.news > header,
+.news-body {
+	margin-bottom: $indent;
+}
+
+.news-title > a:hover {
+	color: $grey;
+}
+
+	.tag {
+		display: inline-block;
+		height: $indent;
+		margin-right: 5px;
+		padding-right: 15px;
+		padding-left: 15px;
+		color: $grey;
+		border-bottom: none;
+		background-color: #343434;
+	}
+
+	.tag:hover {
+		background-color: $black;
+	}
+
+.news .author,
+.news .datetime {
+	display: inline-block;
+	vertical-align: text-top;
+	color: $grey;
+}
+
+.news .author-icon,
+.news .clock-icon {
+	margin-right: 5px;
+}
+
+.datetime {
+	margin-left: 27px;
+}
+
+/* ==============================
+	Icons
+============================== */
+.icon {
+	display: inline-block;
+	height: $font-size;
+	width: $font-size;
+	vertical-align: middle;
+	background-size: cover;
+}
+
+.author-icon {
+	background-image: url(../img/author-icon.svg);
+}
+
+.clock-icon {
+	background-image: url(../img/clock-icon.svg);
 }
