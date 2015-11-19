@@ -56,7 +56,6 @@ html, body {
 	}
 }
 
-
 /* ==============================
 	Typography
 ============================== */
@@ -98,6 +97,10 @@ a {
 
 .page-title {
 	margin-bottom: $indent;
+}
+
+@media all and (max-width: $screen-small) {
+	h2 { font-size: 1.5em }
 }
 
 

@@ -139,6 +139,9 @@ a {
 .page-title {
   margin-bottom: 27px; }
 
+@media all and (max-width: 480px) {
+  h2 {
+    font-size: 1.5em; } }
 /* ==============================
 	Blocks
 ============================== */
@@ -256,6 +259,7 @@ a {
   display: inline-block;
   height: 27px;
   margin-right: 5px;
+  margin-bottom: 10px;
   padding-right: 15px;
   padding-left: 15px;
   color: #808080;
@@ -265,7 +269,7 @@ a {
     background-color: #222; }
 
 .news header {
-  margin-bottom: 27px; }
+  margin-bottom: 17px; }
 .news .author,
 .news .datetime {
   display: inline-block;
@@ -296,11 +300,7 @@ a {
   margin-right: 27px; }
 .news .btn-news {
   min-width: 135px; }
-@media (max-width: 480px) {
-  .news header {
-    margin-bottom: 17px; }
-  .news .tag {
-    margin-bottom: 10px; }
+@media all and (max-width: 480px) {
   .news footer {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;

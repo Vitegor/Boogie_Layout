@@ -21,14 +21,13 @@
 /* ==============================
 	News
 ============================== */
-.news-title > a:hover {
-	color: $grey;
-}
+.news-title > a:hover { color: $grey; }
 
 .tag {
 	display: inline-block;
 	height: $indent;
 	margin-right: 5px;
+	margin-bottom: 10px;
 	padding-right: 15px;
 	padding-left: 15px;
 	color: $grey;
@@ -40,9 +39,7 @@
 
 .news {
 
-	header {
-		margin-bottom: $indent;
-	}
+	header { margin-bottom: $indent - 10px; }
 
 	.author,
 	.datetime {
@@ -72,15 +69,7 @@
 
 	.btn-news { min-width: 135px; }
 
-	@media (max-width: 480px) {
-
-		header {
-			margin-bottom: $indent - 10px;
-		}
-
-		.tag {
-			margin-bottom: 10px;
-		}
+	@media all and (max-width: $screen-small) {
 
 		footer {
 			@include flex-direction(column);
@@ -97,7 +86,7 @@
 			padding-right: 0;
 			padding-left: 0;
 		}
-	} 
+	}
 
 }
 
