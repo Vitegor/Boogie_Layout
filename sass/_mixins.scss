@@ -21,6 +21,11 @@
 	flex-direction: $value;
 }
 
+@mixin justify-content($value) {
+	-webkit-justify-content: $value;
+	justify-content: $value;
+}
+
 @mixin align-items($value) {
 	-webkit-align-items: $value;
 	-moz-align-items: $value;

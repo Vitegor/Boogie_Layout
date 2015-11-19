@@ -249,10 +249,6 @@ a {
 /* ==============================
 	News
 ============================== */
-.news > header,
-.news-body {
-  margin-bottom: 27px; }
-
 .news-title > a:hover {
   color: #808080; }
 
@@ -268,6 +264,8 @@ a {
   .tag:hover {
     background-color: #222; }
 
+.news header {
+  margin-bottom: 27px; }
 .news .author,
 .news .datetime {
   display: inline-block;
@@ -280,34 +278,41 @@ a {
   margin-right: 5px; }
 .news .author {
   margin-right: 27px; }
-.news .datetime {
-  flex-grow: 1; }
 .news footer {
   display: -webkit-flexbox;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 27px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   -ms-align-items: flex-end;
   align-items: flex-end; }
-@media all and (max-width: 768px) {
-  .news .btn-news {
-    display: block;
-    margin-top: 27px; }
+.news .news-info {
+  margin-right: 27px; }
+.news .btn-news {
+  min-width: 135px; }
+@media (max-width: 480px) {
+  .news header {
+    margin-bottom: 17px; }
+  .news .tag {
+    margin-bottom: 10px; }
   .news footer {
-    display: block; } }
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .news footer {
-    text-align: center; }
-  .news .author,
-  .news .datetime {
-    display: block;
-    text-align: left; }
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .news .news-info {
+    align-self: flex-start;
+    margin-right: 0; }
   .news .btn-news {
-    display: inline-block; } }
+    width: 100%;
+    margin-top: 27px;
+    padding-right: 0;
+    padding-left: 0; } }
 
 /* ==============================
 	Icons
