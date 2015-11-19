@@ -2,8 +2,9 @@
 	Font
 ============================== */
 $font-size: 18px;
+$font-size-small: $font-size * 0.8;
 $font-family: Calibri;
-$line-height-text: 1.5em;
+$line-height: 1.5em;
 
 
 /* ==============================
@@ -39,4 +40,4 @@ $line-height: $indent;
 /* ==============================
 	Radiuses
 ============================== */
-$radius: 5px;
+$radius: 4px;

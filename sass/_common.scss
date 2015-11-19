@@ -111,6 +111,34 @@ a {
 	box-sizing: border-box;
 }
 
+
+/* ==============================
+	Buttons
+============================== */
+.btn {
+	display: inline-block;
+	height: $indent * 2;
+	padding-left: $indent;
+	padding-right: $indent;
+	border: 1px solid $grey-darken;
+	border-radius: $radius;
+	text-align: center;
+	font-size: $font-size-small;
+	line-height: $indent * 2;
+}
+
+.btn-red {
+		&:hover {
+		cursor: pointer;
+		border-color: $red;
+		background-color: $red;
+	}
+}
+
+
+/* ==============================
+	Helpers
+============================== */
 .clear-fix:after {
 	content: "";
 	display: block;

@@ -10,7 +10,7 @@
 
 	ul > li, 
 	ol > li {
-		line-height: $line-height-text;
+		line-height: $line-height;
 	}
 }
 
@@ -31,35 +31,75 @@
 	color: $grey;
 }
 
-	.tag {
-		display: inline-block;
-		height: $indent;
-		margin-right: 5px;
-		padding-right: 15px;
-		padding-left: 15px;
-		color: $grey;
-		border-bottom: none;
-		background-color: #343434;
-	}
-
-	.tag:hover {
-		background-color: $black;
-	}
-
-.news .author,
-.news .datetime {
+.tag {
 	display: inline-block;
-	vertical-align: text-top;
-	color: $grey;
-}
-
-.news .author-icon,
-.news .clock-icon {
+	height: $indent;
 	margin-right: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: $grey;
+	border-bottom: none;
+	background-color: #343434;
+
+	&:hover { background-color: $black; }
 }
 
-.datetime {
-	margin-left: 27px;
+.news {
+
+	.author,
+	.datetime {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: text-top;
+		color: $grey;
+		font-size: $font-size-small;
+	}
+
+	.author-icon,
+	.clock-icon {
+		margin-right: 5px;
+	}
+
+	.author { margin-right: 27px; }
+
+	//hack for horizonal align right of next block
+	.datetime { flex-grow: 1; }
+
+	footer {
+		@include display-flex();
+		@include flex-direction(row);
+		@include align-items(flex-end);
+	}
+
+	@media all and (max-width: 768px) {
+
+		.btn-news {
+			display: block;
+			margin-top: $indent;
+		}
+
+		footer { display: block; }
+	}
+
+	@media all and (min-width: 480px) and (max-width: 768px) {
+
+		footer {
+			text-align: center;
+		}
+
+		.author,
+		.datetime {
+			display: block;
+			text-align: left;
+		}
+		
+		.btn-news {
+			display: inline-block;
+		}
+
+	}
+
+
 }
 
 /* ==============================
@@ -69,7 +109,7 @@
 	display: inline-block;
 	height: $font-size;
 	width: $font-size;
-	vertical-align: middle;
+	vertical-align: sub;
 	background-size: cover;
 }
 

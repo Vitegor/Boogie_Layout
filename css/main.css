@@ -148,6 +148,28 @@ a {
   background-color: #2a2a2a;
   box-sizing: border-box; }
 
+/* ==============================
+	Buttons
+============================== */
+.btn {
+  display: inline-block;
+  height: 54px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14.4px;
+  line-height: 54px; }
+
+.btn-red:hover {
+  cursor: pointer;
+  border-color: #833;
+  background-color: #833; }
+
+/* ==============================
+	Helpers
+============================== */
 .clear-fix:after {
   content: "";
   display: block;
@@ -219,7 +241,7 @@ a {
   margin-left: 54px; }
 .text ul > li,
 .text ol > li {
-  line-height: 1.5em; }
+  line-height: 27px; }
 
 .text-red {
   color: #833; }
@@ -243,22 +265,49 @@ a {
   color: #808080;
   border-bottom: none;
   background-color: #343434; }
-
-.tag:hover {
-  background-color: #222; }
+  .tag:hover {
+    background-color: #222; }
 
 .news .author,
 .news .datetime {
   display: inline-block;
+  margin-bottom: 0;
   vertical-align: text-top;
-  color: #808080; }
-
+  color: #808080;
+  font-size: 14.4px; }
 .news .author-icon,
 .news .clock-icon {
   margin-right: 5px; }
-
-.datetime {
-  margin-left: 27px; }
+.news .author {
+  margin-right: 27px; }
+.news .datetime {
+  flex-grow: 1; }
+.news footer {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end; }
+@media all and (max-width: 768px) {
+  .news .btn-news {
+    display: block;
+    margin-top: 27px; }
+  .news footer {
+    display: block; } }
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .news footer {
+    text-align: center; }
+  .news .author,
+  .news .datetime {
+    display: block;
+    text-align: left; }
+  .news .btn-news {
+    display: inline-block; } }
 
 /* ==============================
 	Icons
@@ -267,7 +316,7 @@ a {
   display: inline-block;
   height: 18px;
   width: 18px;
-  vertical-align: middle;
+  vertical-align: sub;
   background-size: cover; }
 
 .author-icon {

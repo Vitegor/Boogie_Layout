@@ -20,3 +20,10 @@
 	-ms-flex-direction: $value;
 	flex-direction: $value;
 }
+
+@mixin align-items($value) {
+	-webkit-align-items: $value;
+	-moz-align-items: $value;
+	-ms-align-items: $value;
+	align-items: $value;
+}
