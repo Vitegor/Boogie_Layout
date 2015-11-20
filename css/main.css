@@ -152,7 +152,7 @@ a {
 ============================== */
 .btn {
   display: inline-block;
-  height: 54px;
+  height: 52px;
   padding-left: 27px;
   padding-right: 27px;
   border: 1px solid #666;
@@ -251,67 +251,100 @@ a {
 /* ==============================
 	News
 ============================== */
-.news-title > a:hover {
-  color: #808080; }
-
-.tag {
-  display: inline-block;
-  height: 27px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: #808080;
-  border-bottom: none;
-  background-color: #343434; }
-  .tag:hover {
-    background-color: #222; }
-
-.news header {
-  margin-bottom: 17px; }
-.news .author,
-.news .datetime {
-  display: inline-block;
-  margin-bottom: 0;
-  vertical-align: text-top;
-  color: #808080;
-  font-size: 14.4px; }
-.news .author-icon,
-.news .clock-icon {
-  margin-right: 5px; }
-.news .author {
-  margin-right: 27px; }
-.news footer {
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 27px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  -ms-align-items: flex-end;
-  align-items: flex-end; }
-.news .news-info {
-  margin-right: 27px; }
-.news .btn-news {
-  min-width: 135px; }
-@media all and (max-width: 480px) {
+.news {
+  margin-bottom: 27px;
+  padding: 27px;
+  background-color: #2a2a2a; }
+  .news header {
+    margin-bottom: 17px; }
+  .news .news-title > a:hover {
+    color: #808080; }
+  .news .tag {
+    display: inline-block;
+    height: 27px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #808080;
+    border-bottom: none;
+    background-color: #343434; }
+    .news .tag:hover {
+      background-color: #222; }
+  .news .author,
+  .news .datetime {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: text-top;
+    color: #808080;
+    font-size: 14.4px; }
+  .news .author-icon,
+  .news .clock-icon {
+    margin-right: 5px; }
+  .news .author {
+    margin-right: 27px; }
   .news footer {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 27px;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end; }
+  .news .news-info {
+    margin-right: 27px; }
+  .news .btn-news {
+    min-width: 135px; }
+  @media all and (max-width: 480px) {
+    .news footer {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .news .news-info {
+      align-self: flex-start;
+      margin-right: 0; }
+    .news .btn-news {
+      width: 100%;
+      margin-top: 27px;
+      padding-right: 0;
+      padding-left: 0; } }
+
+.news-with-img {
+  padding: 0 0 27px; }
+  .news-with-img header {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
-  .news .news-info {
-    align-self: flex-start;
-    margin-right: 0; }
-  .news .btn-news {
-    width: 100%;
-    margin-top: 27px;
-    padding-right: 0;
-    padding-left: 0; } }
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    height: 270px;
+    margin-bottom: 27px;
+    background-position: center center; }
+  .news-with-img .news-img {
+    overflow: hidden;
+    height: 270px; }
+    .news-with-img .news-img img {
+      width: 885px;
+      background-position: center; }
+  .news-with-img .news-title-wrapper {
+    padding: 27px;
+    background-color: rgba(34, 34, 34, 0.6); }
+  .news-with-img .news-title {
+    margin-bottom: 0; }
+  .news-with-img .news-tags,
+  .news-with-img .news-body,
+  .news-with-img footer {
+    padding-right: 27px;
+    padding-left: 27px; }
 
 /* ==============================
 	Icons

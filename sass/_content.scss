@@ -21,25 +21,29 @@
 /* ==============================
 	News
 ============================== */
-.news-title > a:hover { color: $grey; }
-
-.tag {
-	display: inline-block;
-	height: $indent;
-	margin-right: 5px;
-	margin-bottom: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
-	color: $grey;
-	border-bottom: none;
-	background-color: #343434;
-
-	&:hover { background-color: $black; }
-}
-
 .news {
 
+	margin-bottom: $indent;
+	padding: $indent;
+	background-color: $black-lighten;
+
 	header { margin-bottom: $indent - 10px; }
+
+	.news-title > a:hover { color: $grey; }
+
+	.tag {
+		display: inline-block;
+		height: $indent;
+		margin-right: 5px;
+		margin-bottom: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
+		color: $grey;
+		border-bottom: none;
+		background-color: #343434;
+
+		&:hover { background-color: $black; }
+	}
 
 	.author,
 	.datetime {
@@ -87,7 +91,47 @@
 			padding-left: 0;
 		}
 	}
+}
 
+.news-with-img {
+
+	header {
+		@include display-flex();
+		@include flex-direction(column);
+		@include justify-content(flex-end);
+		height: 270px;
+		margin-bottom: 27px;
+		background-position: center center;
+	}
+
+	padding: 0 0 $indent;
+
+	.news-img {
+		overflow: hidden;
+		height: 270px;
+
+		img {
+			width: 885px;
+			background-position: center;
+		}
+
+	}
+
+	.news-title-wrapper {
+		padding: $indent;
+		background-color: rgba(34, 34, 34, 0.6);
+	}
+
+	.news-title {
+		margin-bottom: 0;
+	}
+
+	.news-tags,
+	.news-body,
+	footer {
+		padding-right: $indent;
+		padding-left: $indent;
+	}
 }
 
 /* ==============================
