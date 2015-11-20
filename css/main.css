@@ -51,14 +51,11 @@ table {
 	Common
 ============================== */
 body {
+  color: #ccc;
   font-size: 18px;
   font-family: Calibri;
-  background-color: #222;
-  color: #ccc; }
-
-html, body {
-  height: 100%;
-  line-height: 27px; }
+  line-height: 27px;
+  background-color: #222; }
 
 #wrapper {
   display: -webkit-flexbox;
@@ -67,11 +64,10 @@ html, body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
-  min-height: 100vh; }
+  height: 100vh; }
 
 #content {
-  flex-grow: 1;
+  flex: 1 0 auto;
   width: 100%;
   max-width: 1189px;
   margin: 27px auto 0; }
@@ -169,6 +165,9 @@ a {
   cursor: pointer;
   border-color: #833;
   background-color: #833; }
+.btn-red:active {
+  border-color: #752c2c;
+  background-color: #752c2c; }
 
 /* ==============================
 	Helpers
@@ -190,7 +189,7 @@ a {
   background-color: #ad4141; }
 
 .bg-color-red-darken {
-  background-color: #632525; }
+  background-color: #752c2c; }
 
 .bg-color-blue {
   background-color: #296ddb; }
@@ -331,6 +330,7 @@ a {
   background-image: url(../img/clock-icon.svg); }
 
 #footer {
+  flex-shrink: 0;
   padding: 27px;
   background-color: #2a2a2a; }
 
