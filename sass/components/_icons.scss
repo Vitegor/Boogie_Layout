@@ -1,0 +1,15 @@
+.icon {
+	display: inline-block;
+	height: $font-size;
+	width: $font-size;
+	vertical-align: sub;
+	background-size: cover;
+}
+
+.author-icon {
+	background-image: url(../img/author-icon.svg);
+}
+
+.clock-icon {
+	background-image: url(../img/clock-icon.svg);
+}

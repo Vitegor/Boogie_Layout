@@ -1,0 +1,60 @@
+h1 { font-size: 2.5em; }
+
+h2 { 
+	@include h-setting(2em, 27px);
+	@include respond-to(small) { font-size: 1.5em }
+}
+
+h3 { font-size: 1.5em; }
+h4 { @include h-setting(1.2em, 9px); }
+
+.page-title {
+	margin-bottom: $indent;
+}
+
+p { margin-top: $indent; }
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+.link {
+	color: $blue;
+	border-bottom: 1px dashed $blue;
+
+	&:hover {
+		border-bottom: none;
+	}
+
+	&:active {
+		color: $blue-darken;
+		border-bottom: 1px dashed $blue-darken;
+	}
+
+	&:visited {
+		color: $grey-lighten;
+		border-color: $grey-lighten;
+
+		&:active {
+			color: $blue-darken;
+			border-bottom: 1px dashed $blue-darken;
+		}
+	}
+}
+
+.text {
+
+	h2 { color: $grey-lighten; }
+	h3 { color: $grey; }
+	h4 { color: $grey-darken; }
+
+	ul, ol { margin-left: 54px; }
+
+	ul > li,
+	ol > li {
+		line-height: $line-height;
+	}
+}
+
+.text-red { color: $red; }

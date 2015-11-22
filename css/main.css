@@ -1,3 +1,21 @@
+/* ==============================
+	Typography
+============================== */
+/* ==============================
+	Colors
+============================== */
+/* ==============================
+	Sizes
+============================== */
+/* ==============================
+	Radiuses
+============================== */
+/* ==============================
+	Flexbox
+============================== */
+/* ==============================
+	Media queries
+============================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,21 +53,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* ==============================
-	Font
-============================== */
-/* ==============================
-	Colors
-============================== */
-/* ==============================
-	Sizes
-============================== */
-/* ==============================
-	Radiuses
-============================== */
-/* ==============================
-	Common
-============================== */
 body {
   color: #ccc;
   font-size: 18px;
@@ -80,37 +83,43 @@ body {
 #main {
   float: left;
   width: calc(100% - 27px - 277px); }
+  @media all and (max-width: 768px) {
+    #main {
+      float: none;
+      width: 100%; } }
 
 #sidebar {
   float: right;
   width: 277px;
   margin-left: 27px; }
+  @media all and (max-width: 768px) {
+    #sidebar {
+      float: none;
+      width: 100%;
+      margin-left: 0; } }
 
-@media all and (max-width: 768px) {
-  #main, #sidebar {
-    float: none;
-    width: 100%; }
-
-  #sidebar {
-    margin-left: 0; } }
-/* ==============================
-	Blocks
-============================== */
 .block {
   margin-bottom: 27px;
   padding: 27px;
   background-color: #2a2a2a;
   box-sizing: border-box; }
 
-/* ==============================
-	Typography
-============================== */
+.clear-fix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden; }
+
 h1 {
   font-size: 2.5em; }
 
 h2 {
   margin-bottom: 27px;
   font-size: 2em; }
+  @media all and (max-width: 480px) {
+    h2 {
+      font-size: 1.5em; } }
 
 h3 {
   font-size: 1.5em; }
@@ -159,12 +168,24 @@ a {
 .text-red {
   color: #833; }
 
-@media all and (max-width: 480px) {
-  h2 {
-    font-size: 1.5em; } }
-/* ==============================
-	Buttons
-============================== */
+#logo {
+  height: 100%;
+  padding-right: 27px;
+  padding-left: 27px;
+  background-color: #2a2a2a;
+  font-size: 56px;
+  line-height: 81px;
+  color: #ccc; }
+
+#footer {
+  flex-shrink: 0;
+  padding: 27px;
+  background-color: #2a2a2a; }
+
+#copyright {
+  text-align: center;
+  color: #666; }
+
 .btn {
   display: inline-block;
   height: 52px;
@@ -184,9 +205,6 @@ a {
   border-color: #752c2c;
   background-color: #752c2c; }
 
-/* ==============================
-	Icons
-============================== */
 .icon {
   display: inline-block;
   height: 18px;
@@ -200,70 +218,6 @@ a {
 .clock-icon {
   background-image: url(../img/clock-icon.svg); }
 
-/* ==============================
-	Helpers
-============================== */
-.clear-fix:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0px;
-  visibility: hidden; }
-
-/* ==============================
-	FOR DELETE
-============================== */
-.bg-color-red {
-  background-color: #833; }
-
-.bg-color-red-lighten {
-  background-color: #ad4141; }
-
-.bg-color-red-darken {
-  background-color: #752c2c; }
-
-.bg-color-blue {
-  background-color: #296ddb; }
-
-.bg-color-blue-lighten {
-  background-color: #5d91e4; }
-
-.bg-color-blue-darken {
-  background-color: #1a4c9d; }
-
-.bg-color-grey {
-  background-color: #808080; }
-
-.bg-color-grey-lighten {
-  background-color: #999; }
-
-.bg-color-grey-darken {
-  background-color: #666; }
-
-.bg-color-black {
-  background-color: #222; }
-
-.bg-color-black-lighten {
-  background-color: #2a2a2a; }
-
-.bg-color-black-darken {
-  background-color: #1a1a1a; }
-
-.bg-color-white {
-  background-color: #ccc; }
-
-#logo {
-  height: 100%;
-  padding-right: 27px;
-  padding-left: 27px;
-  background-color: #2a2a2a;
-  font-size: 56px;
-  line-height: 81px;
-  color: #ccc; }
-
-/* ==============================
-	News
-============================== */
 .news {
   margin-bottom: 27px;
   padding: 27px;
@@ -364,14 +318,5 @@ a {
   .news-with-img footer {
     padding-right: 27px;
     padding-left: 27px; }
-
-#footer {
-  flex-shrink: 0;
-  padding: 27px;
-  background-color: #2a2a2a; }
-
-#copyright {
-  text-align: center;
-  color: #666; }
 
 /*# sourceMappingURL=main.css.map */

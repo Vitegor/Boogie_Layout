@@ -1,0 +1,24 @@
+.btn {
+	display: inline-block;
+	height: $indent * 2 - 2; // 2px - is top and bottom border
+	padding-left: $indent;
+	padding-right: $indent;
+	border: 1px solid $grey-darken;
+	border-radius: $radius;
+	text-align: center;
+	font-size: $font-size-small;
+	line-height: $indent * 2;
+}
+
+.btn-red {
+		&:hover {
+		cursor: pointer;
+		border-color: $red;
+		background-color: $red;
+	}
+
+	&:active {
+		border-color: $red-darken;
+		background-color: $red-darken;
+	}
+}

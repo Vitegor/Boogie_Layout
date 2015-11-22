@@ -9,6 +9,10 @@
 	border-radius: $value;
 }
 
+
+/* ==============================
+	Flexbox
+============================== */
 @mixin display-flex() {
 	display: -webkit-flexbox;
 	display: -ms-flexbox;
@@ -31,4 +35,18 @@
 	-moz-align-items: $value;
 	-ms-align-items: $value;
 	align-items: $value;
+}
+
+
+/* ==============================
+	Media queries
+============================== */
+@mixin respond-to($media) {
+	@if $media == small {
+		@media all and (max-width: $screen-small) { @content; }
+	}
+
+	@if $media == medium {
+		@media all and (max-width: $screen-medium) { @content; }
+	}
 }

@@ -1,0 +1,63 @@
+body {
+	color: $white;
+	font-size: $font-size;
+	font-family: $font-family;
+	line-height: $line-height;
+	background-color: $black;
+}
+
+#wrapper {
+	@include display-flex();
+	@include flex-direction(column);
+	height: 100vh;
+}
+
+#content {
+	flex: 1 0 auto;
+	width: 100%; //IE - for margin: 0 auto
+	max-width: 1189px;
+	margin: $indent auto 0;
+}
+
+	#content::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+#main {
+	float: left;
+	width: calc(100% - 27px - 277px);
+
+	@include respond-to(medium) {
+		float: none;
+		width: 100%;
+	}
+}
+
+#sidebar {
+	float: right;
+	width: 277px;
+	margin-left: $indent;
+
+	@include respond-to(medium) {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.block {
+	margin-bottom: $indent;
+	padding: $indent;
+	background-color: $black-lighten;
+	box-sizing: border-box;
+}
+
+.clear-fix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
