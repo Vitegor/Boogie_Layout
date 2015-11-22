@@ -17,7 +17,7 @@ body {
 
 #content {
 	flex: 1 0 auto;
-	width: 100%; //IE (for margin: 0 auto)
+	width: 100%; //IE - for margin: 0 auto
 	max-width: 1189px;
 	margin: $indent auto 0;
 }
@@ -51,6 +51,18 @@ body {
 	}
 }
 
+
+/* ==============================
+	Blocks
+============================== */
+.block {
+	margin-bottom: $indent;
+	padding: $indent;
+	background-color: $black-lighten;
+	box-sizing: border-box;
+}
+
+
 /* ==============================
 	Typography
 ============================== */
@@ -58,6 +70,10 @@ h1 { font-size: 2.5em; }
 h2 { @include h-setting(2em, 27px); }
 h3 { font-size: 1.5em; }
 h4 { @include h-setting(1.2em, 9px); }
+
+.page-title {
+	margin-bottom: $indent;
+}
 
 p { margin-top: $indent; }
 
@@ -90,23 +106,24 @@ a {
 	}
 }
 
-.page-title {
-	margin-bottom: $indent;
+.text {
+
+	h2 { color: $grey-lighten; }
+	h3 { color: $grey; }
+	h4 { color: $grey-darken; }
+
+	ul, ol { margin-left: 54px; }
+
+	ul > li,
+	ol > li {
+		line-height: $line-height;
+	}
 }
+
+.text-red { color: $red; }
 
 @media all and (max-width: $screen-small) {
 	h2 { font-size: 1.5em }
-}
-
-
-/* ==============================
-	Blocks
-============================== */
-.block {
-	margin-bottom: $indent;
-	padding: $indent;
-	background-color: $black-lighten;
-	box-sizing: border-box;
 }
 
 
@@ -115,7 +132,7 @@ a {
 ============================== */
 .btn {
 	display: inline-block;
-	height: $indent * 2 - 2;
+	height: $indent * 2 - 2; // 2px - is top and bottom border
 	padding-left: $indent;
 	padding-right: $indent;
 	border: 1px solid $grey-darken;
@@ -136,6 +153,26 @@ a {
 		border-color: $red-darken;
 		background-color: $red-darken;
 	}
+}
+
+
+/* ==============================
+	Icons
+============================== */
+.icon {
+	display: inline-block;
+	height: $font-size;
+	width: $font-size;
+	vertical-align: sub;
+	background-size: cover;
+}
+
+.author-icon {
+	background-image: url(../img/author-icon.svg);
+}
+
+.clock-icon {
+	background-image: url(../img/clock-icon.svg);
 }
 
 

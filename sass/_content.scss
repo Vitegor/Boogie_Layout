@@ -1,24 +1,4 @@
 /* ==============================
-	Text
-============================== */
-.text {
-
-	h2 { color: $grey-lighten; }
-	h3 { color: $grey; }
-	h4 { color: $grey-darken; }
-
-	ul, ol { margin-left: 54px; }
-
-	ul > li,
-	ol > li {
-		line-height: $line-height;
-	}
-}
-
-.text-red { color: $red; }
-
-
-/* ==============================
 	News
 ============================== */
 .news {
@@ -27,9 +7,13 @@
 	padding: $indent;
 	background-color: $black-lighten;
 
-	header { margin-bottom: $indent - 10px; }
+	header { margin-bottom: $indent; }
 
 	.news-title > a:hover { color: $grey; }
+
+	.news-tags {
+		margin-bottom: 17px;
+	}
 
 	.tag {
 		display: inline-block;
@@ -52,6 +36,14 @@
 		vertical-align: text-top;
 		color: $grey;
 		font-size: $font-size-small;
+	}
+
+	.date {
+		white-space: pre-wrap;
+	}
+
+	.time {
+		color: $red;
 	}
 
 	.author-icon,
@@ -132,23 +124,4 @@
 		padding-right: $indent;
 		padding-left: $indent;
 	}
-}
-
-/* ==============================
-	Icons
-============================== */
-.icon {
-	display: inline-block;
-	height: $font-size;
-	width: $font-size;
-	vertical-align: sub;
-	background-size: cover;
-}
-
-.author-icon {
-	background-image: url(../img/author-icon.svg);
-}
-
-.clock-icon {
-	background-image: url(../img/clock-icon.svg);
 }
