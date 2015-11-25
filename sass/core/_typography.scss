@@ -8,9 +8,7 @@ h2 {
 h3 { font-size: 1.5em; }
 h4 { @include h-setting(1.2em, 9px); }
 
-.page-title {
-	margin-bottom: $indent;
-}
+.page-title { margin-bottom: $indent; }
 
 p { margin-top: $indent; }
 
