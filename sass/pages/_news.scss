@@ -6,11 +6,9 @@
 
 	header { margin-bottom: $indent; }
 
-	.news-title > a:hover { color: $grey; }
+	.news-title > a:hover { color: $grey-lighten; }
 
-	.news-tags {
-		margin-bottom: 17px;
-	}
+	.news-tags { margin-bottom: 17px; }
 
 	.tag {
 		display: inline-block;
@@ -35,20 +33,14 @@
 		font-size: $font-size-small;
 	}
 
-	.date {
-		white-space: pre-wrap;
-	}
-
-	.time {
-		color: $red;
-	}
+	.date { white-space: pre-wrap; }
+	.time { color: $red; }
+	.author { margin-right: 27px; }
 
 	.author-icon,
 	.clock-icon {
 		margin-right: 5px;
 	}
-
-	.author { margin-right: 27px; }
 
 	footer {
 		@include display-flex();
@@ -56,24 +48,25 @@
 		@include flex-direction(row);
 		@include justify-content(space-between);
 		@include align-items(flex-end);
-	}
 
-	.news-info { margin-right: $indent; }
-
-	.btn-news { min-width: 135px; }
-
-	@media all and (max-width: $screen-small) {
-
-		footer {
+		@include respond-to(small) {
 			@include flex-direction(column);
 		}
+	}
 
-		.news-info {
+	.news-info { 
+		margin-right: $indent;
+
+		@include respond-to(small) {
 			align-self: flex-start;
 			margin-right: 0;
 		}
+	}
 
-		.btn-news {
+	.btn-news {
+		min-width: 135px;
+
+		@include respond-to(small) {
 			width: 100%;
 			margin-top: $indent;
 			padding-right: 0;
@@ -111,9 +104,7 @@
 		background-color: rgba(34, 34, 34, 0.6);
 	}
 
-	.news-title {
-		margin-bottom: 0;
-	}
+	.news-title { margin-bottom: 0; }
 
 	.news-tags,
 	.news-body,

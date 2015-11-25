@@ -225,7 +225,7 @@ a {
   .news header {
     margin-bottom: 27px; }
   .news .news-title > a:hover {
-    color: #808080; }
+    color: #999; }
   .news .news-tags {
     margin-bottom: 17px; }
   .news .tag {
@@ -251,11 +251,11 @@ a {
     white-space: pre-wrap; }
   .news .time {
     color: #833; }
+  .news .author {
+    margin-right: 27px; }
   .news .author-icon,
   .news .clock-icon {
     margin-right: 5px; }
-  .news .author {
-    margin-right: 27px; }
   .news footer {
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -270,23 +270,25 @@ a {
     -moz-align-items: flex-end;
     -ms-align-items: flex-end;
     align-items: flex-end; }
+    @media all and (max-width: 480px) {
+      .news footer {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .news .news-info {
     margin-right: 27px; }
+    @media all and (max-width: 480px) {
+      .news .news-info {
+        align-self: flex-start;
+        margin-right: 0; } }
   .news .btn-news {
     min-width: 135px; }
-  @media all and (max-width: 480px) {
-    .news footer {
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-    .news .news-info {
-      align-self: flex-start;
-      margin-right: 0; }
-    .news .btn-news {
-      width: 100%;
-      margin-top: 27px;
-      padding-right: 0;
-      padding-left: 0; } }
+    @media all and (max-width: 480px) {
+      .news .btn-news {
+        width: 100%;
+        margin-top: 27px;
+        padding-right: 0;
+        padding-left: 0; } }
 
 .news-with-img {
   padding: 0 0 27px; }
