@@ -1,7 +1,8 @@
 h1 { font-size: 2.5em; }
 
 h2 { 
-	@include h-setting(2em, 27px);
+	line-height: 36px;
+	@include h-setting(2em, $indent);
 	@include respond-to(small) { font-size: 1.5em }
 }
 

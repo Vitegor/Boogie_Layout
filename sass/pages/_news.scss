@@ -56,7 +56,7 @@
 		}
 	}
 
-	.news-info { 
+	.news-info {
 		margin-right: $indent;
 
 		@include respond-to(small) {
@@ -107,6 +107,10 @@
 	}
 
 	.news-title { margin-bottom: 0; }
+
+	.news-body > p:first-child {
+		margin-top: 0;
+	}
 
 	.news-tags,
 	.news-body,
