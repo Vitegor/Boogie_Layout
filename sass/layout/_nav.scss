@@ -31,6 +31,7 @@
 
 				@include respond-to(medium) {
 					display: block;
+					border-left: 3px solid $black-darken;
 				}
 
 				&:hover {
