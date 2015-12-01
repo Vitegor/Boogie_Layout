@@ -5,6 +5,7 @@
 	background-color: $black-darken;
 
 	@include respond-to(medium) {
+		display: none;
 		max-height: none;
 	}
 
@@ -25,7 +26,6 @@
 				box-sizing: border-box;
 				height: $indent * 2;
 				color: $grey-lighten;
-				font-weight: 100;
 				line-height: $indent * 2;
 				border-bottom: 3px solid $black-darken; //IE
 
@@ -47,4 +47,86 @@
 			}
 		}
 	}
+}
+
+#top-nav-toggle {
+	display: none;
+	height: $indent * 2;
+	height: auto; //IE
+	text-align: center;
+	color: $grey-lighten;
+	font-size: 1.5em;
+	background-color: $black-darken;
+	line-height: $indent * 2;
+
+	@include respond-to(medium) {
+		display: block;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: $white;
+		background-color: $black-lighten;
+
+		#top-nav-icon span {
+			background-color: $white;
+		}
+	}
+
+	&.top-nav-toggle-opened {
+
+		color: $white;
+		background-color: $black-lighten;
+
+		#top-nav-icon {
+			span { background-color: $white; }
+
+			span:nth-child(1) {
+				top: 18px;
+				@include transform(rotate(45deg));
+			}
+
+			span:nth-child(2) {
+				width: 0%;
+				opacity: 0;
+			}
+
+			span:nth-child(3) {
+				top: 37px;
+				@include transform(rotate(-45deg));
+			}
+		}
+	}
+}
+
+#top-nav-icon {
+	position: relative;
+	width: $indent;
+	margin-left: $indent;
+	cursor: pointer;
+
+	@include transform(rotate(0deg));
+	@include transition(.5s ease-in-out);
+
+	span {
+		position: absolute;
+		left: 0;
+		display: block;
+		height: 3px;
+		width: 100%;
+		border-radius: $radius;
+		background: $grey-lighten;
+		@include transform(rotate(0deg));
+		@include transition(.25s ease-in-out);
+	}
+
+	span:nth-child(1),
+	span:nth-child(2),
+	span:nth-child(3) {
+		@include transform-origin(left center);
+	}
+
+	span:nth-child(1) { top: 18px; }
+	span:nth-child(2) { top: 25px; }
+	span:nth-child(3) { top: 32px; }
 }

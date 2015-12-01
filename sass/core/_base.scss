@@ -54,6 +54,8 @@ body {
 	box-sizing: border-box;
 }
 
+.display-block { display: block!important; }
+
 .clear-fix:after {
 	content: "";
 	display: block;
