@@ -1,6 +1,7 @@
 var gulp 				= require('gulp'),
 		watch 			= require('gulp-watch'),
 		uglify 			= require('gulp-uglify'),
+		concat 			= require('gulp-concat'),
 		sass 				= require('gulp-sass'),
 		cssmin 			= require('gulp-minify-css'),
 		rigger 			= require('gulp-rigger'),
@@ -13,7 +14,7 @@ var paths = {
 	src: {
 		html: 		'src/*.html',
 		style: 		'src/sass/main.scss',
-		js: 			'src/js/main.js',
+		js: 			'src/js/*.js',
 		img: 			'src/img/**/*.*',
 		content: 	'src/content/**/*.*',
 		fonts: 		'src/fonts/**/*.*'
@@ -43,10 +44,7 @@ var paths = {
 
 var config = {
 	server: { baseDir: paths.build.html },
-	host: 'localhost',
-	port: 9000,
-	startPath: "news.html",
-	logPrefix: "Boogie",
+	startPath: "player.html",
 	notify: false
 };
 
@@ -80,7 +78,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
 	gulp.src(paths.src.js)
-		.pipe(rigger())
+		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest(paths.build.js))
 		.pipe(reload({stream: true}));
