@@ -1,0 +1,27 @@
+{
+  "name": "Boogie_Layout",
+  "homepage": "https://github.com/Vitegor/Boogie__layout",
+  "authors": [
+    "Boogie"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
+}

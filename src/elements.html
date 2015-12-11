@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Элементы</title>
+	<link rel="stylesheet" href="css/main.css">
+
+	<style>
+
+		.color-code {
+			margin-top: 5px;
+		}
+
+		.color {
+			height: 81px;
+			width: 81px;
+			float: left;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.color-example {
+			height: 50px;
+			width: 50px;
+			margin-left: 15px;
+			font-weight: bold;
+			border: 1px solid white;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="wrapper">
+
+		//= template/header.html
+
+		//= template/top_nav.html
+
+		<div id="content">
+
+			<div id="main">
+				<div class="block">
+					<h2 class="page-title text-red">Цветовая схема</h2>
+					<div class="color"><div class="color-example bg-color-red-lighten"></div></div>
+					<div class="color"><div class="color-example bg-color-red"></div></div>
+					<div class="color"><div class="color-example bg-color-red-darken"></div></div>
+
+					<div class="color"><div class="color-example bg-color-blue-lighten"></div></div>
+					<div class="color"><div class="color-example bg-color-blue"></div></div>
+					<div class="color"><div class="color-example bg-color-blue-darken"></div></div>
+
+					<div class="color"><div class="color-example bg-color-white"></div></div>
+
+					<div class="color"><div class="color-example bg-color-grey-lighten"></div></div>
+					<div class="color"><div class="color-example bg-color-grey"></div></div>
+					<div class="color"><div class="color-example bg-color-grey-darken"></div></div>
+
+					<div class="color"><div class="color-example bg-color-black-lighten"></div></div>
+					<div class="color"><div class="color-example bg-color-black"></div></div>
+					<div class="color"><div class="color-example bg-color-black-darken"></div></div>
+					<div class="clear-fix"></div>
+				</div>
+				<div class="block">
+					<h2 class="page-title text-red">Текстовые элементы</h2>
+					<div class="text">
+						<h1>Заголовок 1-го уровня</h1>
+						<h2>Заголовок 2-го уровня</h2>
+						<h3>Заголовок 3-го уровня</h3>
+						<h4>Заголовок 4-го уровня</h4>
+
+						<ul>
+							<li>Текст</li>
+							<li>Текст</li>
+							<li>Текст</li>
+							<li>Текст</li>
+						</ul>
+
+						<ol>
+							<li>Текст</li>
+							<li>Текст</li>
+							<li>Текст</li>
+							<li>Текст</li>
+						</ol>
+
+						<p>
+							<ul>
+								<li><a href="#">Ссылка</a></li>
+								<li><a href="#">Посещённая ссылка</a></li>
+								<li><a href="#1">Посещённая ссылка</a></li>
+							</ul>
+						</p>
+
+						<p>
+							При создании генератора мы <a href="#">использовали</a> небезызвестный <a href="#">универсальный</a> код речей. Текст генерируется абзацами случайным образом.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		//= template/footer.html
+
+	</div>
+
+</body>
+</html>
