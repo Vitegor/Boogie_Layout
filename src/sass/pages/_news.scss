@@ -46,7 +46,6 @@
 
 	footer {
 		@include display-flex();
-		margin-top: $indent;
 		@include flex-direction(row);
 		@include justify-content(space-between);
 		@include align-items(flex-end);

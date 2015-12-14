@@ -69,4 +69,8 @@
 	@if $media == medium {
 		@media screen and (max-width: $screen-medium) { @content; }
 	}
+
+	@if $media == large {
+		@media screen and (max-width: $screen-large) { @content; }
+	}
 }

@@ -49,12 +49,28 @@ body {
 
 .block {
 	margin-bottom: $indent;
-	padding: $indent;
+	padding: $indent $indent 0;
 	background-color: $black-lighten;
 	box-sizing: border-box;
 }
 
+.block-center {
+	display: table;
+	margin: 0 auto;
+}
+
 .display-block { display: block!important; }
+
+.labels-list {
+	float: left;
+	margin-right: $indent / 3;
+	text-align: right;
+	color: $grey-darken;
+}
+
+.terms-list {
+	float: left;
+}
 
 .clear-fix:after {
 	content: "";

@@ -11,7 +11,9 @@ h4 { @include h-setting(1.2em, 9px); }
 
 .page-title { margin-bottom: $indent; }
 
-p { margin-top: $indent; }
+p { 
+	padding-bottom: $indent;
+}
 
 a {
 	text-decoration: none;
@@ -19,25 +21,25 @@ a {
 }
 
 .link {
-	color: $blue;
-	border-bottom: 1px dashed $blue;
+	color: $grey-lighten;
+	border-bottom: 1px dashed $grey-lighten;
 
 	&:hover {
 		border-bottom: none;
 	}
 
 	&:active {
-		color: $blue-darken;
-		border-bottom: 1px dashed $blue-darken;
+		color: $grey-darken;
+		border-bottom-color: $grey-darken;
 	}
 
-	&:visited {
-		color: $grey-lighten;
-		border-color: $grey-lighten;
+	&.link-blue {
+		color: $blue;
+		border-bottom-color: $blue;
 
 		&:active {
 			color: $blue-darken;
-			border-bottom: 1px dashed $blue-darken;
+			border-bottom-color: $blue-darken;
 		}
 	}
 }
