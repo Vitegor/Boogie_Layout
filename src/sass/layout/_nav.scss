@@ -48,6 +48,10 @@
 				}
 			}
 		}
+
+		li.active > a {
+			border-bottom: 3px solid $red;
+		}
 	}
 }
 
