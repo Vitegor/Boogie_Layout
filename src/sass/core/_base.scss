@@ -62,9 +62,14 @@ body {
 	box-sizing: border-box;
 }
 
-.block-center {
-	display: table;
-	margin: 0 auto;
+.center {
+	@include display-flex();
+	@include flex-direction(row);
+	@include justify-content(center);
+	
+	@include respond-to(small) {
+		@include flex-direction(column);
+	}
 }
 
 .display-block { display: block!important; }
@@ -75,8 +80,8 @@ body {
 
 .text-in-line {
 	width: 100%;
-	margin-top: $indent - 2;
-	margin-bottom: $indent - 2;
+	margin-top: $indent - 1;
+	margin-bottom: $indent - 1;
 	text-align: center;
 	line-height: 0.1em;
 	border-bottom: 1px solid $black;
@@ -100,9 +105,7 @@ body {
 }
 
 .g-recaptcha {
-	// 78 - g-recaptcha source height
-	// 2 - top & bottom border
-	padding-bottom: $indent * 3 - 78 + 2;
+	padding-bottom: $indent * 3 - 78; // 78 - source height of g-recaptcha
 }
 
 .clear-fix:after {

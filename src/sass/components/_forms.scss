@@ -1,8 +1,9 @@
-.form,
-.form-section {
-	margin-bottom: $indent;
-
+.form,{
 	label {
 		font-weight: bold;
 	}
+}
+
+.form-section {
+	margin-bottom: $indent;
 }

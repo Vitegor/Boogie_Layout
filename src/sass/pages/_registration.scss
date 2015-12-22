@@ -1,8 +1,28 @@
 .registration {
-	margin-bottom: $indent;
+	margin: 0 auto $indent;
+	padding-bottom: $indent;
 
 	h2 {
 		margin-bottom: $indent * 2;
 		text-align: center;
 	}
+
+	.registration-socials {
+		padding-bottom: $indent;
+
+		@include respond-to(small) {
+			padding-bottom: 0;
+
+			.btn-social {
+				margin-bottom: $indent;
+			}
+		}
+	}
+
+	.registration-captcha {
+		margin-bottom: $indent * 2;
+	}
 }
+
+
+
