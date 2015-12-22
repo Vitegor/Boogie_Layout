@@ -2,7 +2,7 @@
 	box-sizing: border-box; //IE
 	text-align: center;
 	font-size: 1.5em;
-	background-color: $black-darken;
+	background-color: $black-d;
 
 	@include respond-to(medium) {
 		display: none;
@@ -25,15 +25,15 @@
 				display: inline-block;
 				box-sizing: border-box;
 				height: $indent * 2;
-				color: $grey-lighten;
+				color: $grey-l;
 				line-height: $indent * 2;
-				border-bottom: 3px solid $black-darken; //IE
+				border-bottom: 3px solid $black-d; //IE
 
 				@include respond-to(medium) {
 					display: block;
 					padding-left: $indent;
 					text-align: left;
-					border-left: 3px solid $black-darken;
+					border-left: 3px solid $black-d;
 				}
 
 				&:hover {
@@ -43,7 +43,7 @@
 					@include respond-to(medium) {
 						border-bottom: none;
 						border-left: 3px solid $red;
-						background-color: $black-lighten;
+						background-color: $black-l;
 					}
 				}
 			}
@@ -60,9 +60,9 @@
 	height: $indent * 2;
 	height: auto; //IE
 	text-align: center;
-	color: $grey-lighten;
+	color: $grey-l;
 	font-size: 1.5em;
-	background-color: $black-darken;
+	background-color: $black-d;
 	line-height: $indent * 2;
 
 	@include respond-to(medium) {
@@ -72,7 +72,7 @@
 	&:hover {
 		cursor: pointer;
 		color: $white;
-		background-color: $black-lighten;
+		background-color: $black-l;
 
 		#top-nav-icon span {
 			background-color: $white;
@@ -81,7 +81,7 @@
 
 	&.top-nav-toggle-opened {
 		color: $white;
-		background-color: $black-lighten;
+		background-color: $black-l;
 
 		#top-nav-icon {
 			span { background-color: $white; }
@@ -120,7 +120,7 @@
 		height: 3px;
 		width: 100%;
 		border-radius: $radius;
-		background: $grey-lighten;
+		background: $grey-l;
 
 		@include transform(rotate(0deg));
 		@include transition(.25s ease-in-out);

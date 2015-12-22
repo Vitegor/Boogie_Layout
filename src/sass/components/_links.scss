@@ -1,0 +1,23 @@
+.link {
+	color: $grey-l;
+	border-bottom: 1px dashed $grey-l;
+
+	&:hover {
+		border-bottom: none;
+	}
+
+	&:active {
+		color: $grey-d;
+		border-bottom-color: $grey-d;
+	}
+
+	&.link-blue {
+		color: $blue;
+		border-bottom-color: $blue;
+
+		&:active {
+			color: $blue-d;
+			border-bottom-color: $blue-d;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+//= templates/header.html
+
+<div class="col-8 block block-center registration">
+
+	<h2>Регистрация</h2>
+
+	<div class="block-center text-center">
+		<div class="btn btn-medium btn-social btn-vk">
+			<div class="btn-icon-block">
+				<div class="icon icon-vk"></div>
+			</div>
+			<div class="btn-text-block">ВКонтакте</div>
+		</div>
+
+		<div class="btn btn-medium btn-social btn-google-plus">
+			<div class="btn-icon-block">
+				<div class="icon icon-google-plus"></div>
+			</div>
+			<div class="btn-text-block">Google+</div>
+		</div>
+	</div>
+
+	<div class="text-in-line">
+		<span>или</span>
+	</div>
+
+	<form class="form" action="">
+		<div class="form-section">
+			<label for="nickname">Никнейм:</label>
+			<input id="nickname" type="text" placeholder="Введите никнейм">
+		</div>
+
+		<div class="form-section">
+			<label for="e-mail">E-mail:</label>
+			<input id="e-mail" type="text" placeholder="Введите e-mail">
+		</div>
+
+		<div class="form-section">
+			<label for="password">Пароль:</label>
+			<input id="password" type="password" value="passwordpassword">
+			<span class="icon icon-small icon-in-input icon-eye"></span>
+		</div>
+
+		<div class="form-section">
+			<div
+				class="g-recaptcha"
+				data-sitekey="6LdDLRMTAAAAABW1bHeXl0z8A5S-aEB7-F8FwUoc"
+				data-theme="dark">
+			</div>
+		</div>
+
+		<div class="block-center">
+			<input class="btn btn-green" type="submit" value="Зарегистрироваться">
+		</div>
+	</form>
+
+</div>
+
+//= templates/footer.html

@@ -1,0 +1,27 @@
+input[type="text"],
+input[type="password"],
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: $indent / 1.5;
+	color: $grey;
+	font-family: $font-family;
+	font-size: $font-size;
+	border: none;
+	border-radius: $radius;
+	background-color: $black;
+
+	&:focus {
+		outline: 0;
+		background-color: $black-d;
+	}
+}
+
+input[type="text"],
+input[type="password"] {
+	height: $indent * 2;
+}
+
+textarea {
+	height: 100%;
+}

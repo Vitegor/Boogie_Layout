@@ -1,15 +1,48 @@
 .icon {
 	display: inline-block;
-	height: $font-size;
-	width: $font-size;
+	height: $indent - 2;
+	width: $indent - 2;
 	vertical-align: sub;
 	background-size: cover;
 }
 
-.author-icon {
-	background-image: url(../img/author-icon.svg);
+.icon-small {
+	height: $font-size;
+	width: $font-size;
 }
 
-.clock-icon {
-	background-image: url(../img/clock-icon.svg);
+.icon-in-input {
+	position: relative;
+	top: -35px;
+	left: -18px;
+	float: right;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.icon-author,
+.icon-clock,{
+	margin-right: 5px;
+}
+
+.icon-author {
+	background-image: url(../img/icons/icon-author.svg);
+}
+
+.icon-clock {
+	background-image: url(../img/icons/icon-clock.svg);
+}
+
+.icon-vk {
+	background-image: url(../img/icons/icon-vk.svg);
+}
+
+.icon-google-plus {
+	background-image: url(../img/icons/icon-google-plus.svg);
+}
+
+.icon-eye {
+	background-image: url(../img/icons/icon-eye.svg);
 }

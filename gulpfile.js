@@ -5,6 +5,7 @@ var gulp 				= require('gulp'),
 		sass 				= require('gulp-sass'),
 		cssmin 			= require('gulp-minify-css'),
 		rigger 			= require('gulp-rigger'),
+		plumber 		= require('gulp-plumber'),
 		bower 			= require('main-bower-files'),
 		rimraf 			= require('rimraf'),
 		browserSync = require("browser-sync"),
@@ -14,8 +15,8 @@ var paths = {
 	src: {
 		html: 		'src/*.html',
 		style: 		'src/sass/main.scss',
-		js: 			['src/js/*.js', '!src/js/modulargrid.js'],
-		//js: 			'src/js/*.js',
+		//js: 			['src/js/*.js', '!src/js/modulargrid.js'],
+		js: 			'src/js/*.js',
 		img: 			'src/img/**/*.*',
 		content: 	'src/content/**/*.*',
 		fonts: 		'src/fonts/**/*.*'
@@ -45,7 +46,7 @@ var paths = {
 
 var config = {
 	server: { baseDir: paths.build.html },
-	startPath: "player.html",
+	startPath: "registration.html",
 	notify: false
 };
 
@@ -71,6 +72,7 @@ gulp.task('lib', function() {
 
 gulp.task('css', function () {
 	gulp.src(paths.src.style)
+		.pipe(plumber())
 		.pipe(sass({ includePaths : [paths.src.style] }))
 		.pipe(cssmin())
 		.pipe(gulp.dest(paths.build.css))

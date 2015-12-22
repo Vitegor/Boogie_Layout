@@ -17,3 +17,11 @@
 		width: 100%;
 	}
 }
+
+.col-8 {
+	width: 581px;
+
+	@include respond-to(medium) {
+		width: 100%;
+	}
+}

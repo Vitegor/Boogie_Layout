@@ -2,6 +2,7 @@
 @import "utils/mixins";
 
 @import "core/reset";
+@import "core/fonts";
 @import "core/base";
 @import "core/grid";
 @import "core/typography";
@@ -10,9 +11,13 @@
 @import "layout/footer";
 @import "layout/nav";
 
-@import "components/_buttons";
-@import "components/_icons";
+@import "components/buttons";
+@import "components/links";
+@import "components/inputs";
+@import "components/icons";
+@import "components/forms";
 
 @import "pages/news";
 @import "pages/elements";
 @import "pages/player";
+@import "pages/registration";

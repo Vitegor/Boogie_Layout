@@ -1,11 +1,6 @@
 /* ==============================
 	Typography
 ============================== */
-@font-face {
-	font-family: "Ubuntu";
-	src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
-}
-
 $font-size: 18px;
 $font-size-small: 0.8em;
 $font-family: "Ubuntu", sans-serif;
@@ -16,22 +11,39 @@ $line-height: 1.5em;
 	Colors
 ============================== */
 $red: #833;
-$red-lighten: lighten($red, 10%);
-$red-darken: darken($red, 5%);
+$red-l: lighten($red, 10%);
+$red-d: darken($red, 5%);
+
+$orange: #885d33;
+$orange-l: lighten($orange, 10%);
+$orange-d: darken($orange, 10%);
+
+$green: #338848;
+$green-l: lighten($green, 10%);
+$green-d: darken($green, 10%);
 
 $blue: #296ddb;
-$blue-lighten: lighten($blue, 12%);
-$blue-darken: darken($blue, 15%);
+$blue-l: lighten($blue, 12%);
+$blue-d: darken($blue, 15%);
 
 $grey: #808080;
-$grey-lighten: #999;
-$grey-darken: #666;
+$grey-l: #999;
+$grey-d: #666;
 
 $black: #222;
-$black-lighten: #2a2a2a;
-$black-darken: darken($black, 3%);
+$black-l: #2a2a2a;
+$black-d: darken($black, 3%);
 
 $white: #ccc;
+$white-l: lighten($white, 10%);
+
+$color-vk: #54769b;
+$color-vk-hover: #6d8cb0;
+$color-vk-active: #5c7ca1;
+
+$color-google-plus: #dc4e41;
+$color-google-plus-hover: #e06055;
+$color-google-plus-active: $color-google-plus;
 
 
 /* ==============================
@@ -50,3 +62,4 @@ $screen-large: 1024px;
 	Radiuses
 ============================== */
 $radius: 4px;
+$radius-small: 2px;

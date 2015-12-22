@@ -2,11 +2,15 @@
 
 	margin-bottom: $indent;
 	padding: $indent;
-	background-color: $black-lighten;
+	background-color: $black-l;
 
 	header { margin-bottom: $indent; }
 
-	.news-title > a:hover { color: $grey-lighten; }
+	.news-title {
+		line-height: 36px;
+
+		a:hover { color: $grey-l; }
+	}
 
 	.news-tags { margin-bottom: 17px; }
 
@@ -38,11 +42,6 @@
 	.date { white-space: pre-wrap; }
 	.time { color: $red; }
 	.author { margin-right: 27px; }
-
-	.author-icon,
-	.clock-icon {
-		margin-right: 5px;
-	}
 
 	footer {
 		@include display-flex();

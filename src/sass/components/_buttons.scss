@@ -1,24 +1,110 @@
 .btn {
 	display: inline-block;
-	height: $indent * 2 - 2; // 2px - is top and bottom border
-	padding-left: $indent;
-	padding-right: $indent;
-	border: 1px solid $grey-darken;
+	box-sizing: border-box;
+	height: $indent * 2;
+	padding: 0 $indent;
+	border: 1px solid $grey-d;
 	border-radius: $radius;
 	text-align: center;
+	color: $white;
 	font-size: $font-size-small;
 	line-height: $indent * 2;
+	background-color: transparent;
+
+	&:hover {
+		cursor: pointer;
+		color: $white-l;
+	}
+
+	&:active {
+		color: $white;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+	&.btn-medium {
+		height: $indent * 1.5;
+		margin-bottom: $indent * 2 - $indent * 1.5;
+	}
+
+	&.btn-small {
+		height: $indent;
+		padding: 0 $indent / 2;
+		border-radius: $radius-small;
+		line-height: $indent;
+	}
+}
+
+input.btn {
+	line-height: 100%;
 }
 
 .btn-red {
-		&:hover {
-		cursor: pointer;
+	&:hover {
 		border-color: $red;
 		background-color: $red;
 	}
 
 	&:active {
-		border-color: $red-darken;
-		background-color: $red-darken;
+		border-color: $red-d;
+		background-color: $red-d;
+	}
+}
+
+.btn-green {
+	&:hover {
+		border-color: $green;
+		background-color: $green;
+	}
+
+	&:active {
+		border-color: $green-d;
+		background-color: $green-d;
+	}
+}
+
+.btn-social {
+	display: table;
+	float: left;
+	margin-right: $indent / 2;
+	margin-left: $indent / 2;
+	padding: 0;
+	line-height: 100%;
+	border: none;
+	border-radius: 0;
+
+	.btn-icon-block,
+	.btn-text-block {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.btn-icon-block {
+		width: $indent * 1.5;
+	}
+
+	.btn-text-block {
+		display: table-cell;
+		padding-left: $indent / 3;
+		padding-right: $indent / 3;
+		color: #fff;
+	}
+}
+
+.btn-vk {
+	background-color: $color-vk-hover;
+
+	.btn-icon-block {
+		background-color: $color-vk;
+	}
+}
+
+.btn-google-plus {
+	background-color: $color-google-plus-hover;
+
+	.btn-icon-block {
+		background-color: $color-google-plus;
 	}
 }

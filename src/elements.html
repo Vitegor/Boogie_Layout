@@ -1,65 +1,38 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Элементы</title>
-	<link rel="stylesheet" href="css/main.css">
+//= templates/header.html
 
-	<style>
+<div id="content">
 
-		.color-code {
-			margin-top: 5px;
-		}
-		
-		.color {
-			height: 81px;
-			width: 81px;
-			float: left;
-			text-align: center;
-			margin: 0 auto;
-		}
+	<h2>Цветовая схема</h2>
 
-		.color-example {
-			height: 50px;
-			width: 50px;
-			margin-left: 15px;
-			font-weight: bold;
-			border: 1px solid white;
-		}
+	<div class="block row colors">
+		<div class="color color-red-l"></div>
+		<div class="color color-red"></div>
+		<div class="color color-red-d"></div>
 
-	</style>
+		<div class="color color-orange-l"></div>
+		<div class="color color-orange"></div>
+		<div class="color color-orange-d"></div>
 
-</head>
-<body>
+		<div class="color color-green-l"></div>
+		<div class="color color-green"></div>
+		<div class="color color-green-d"></div>
 
-	<div id="wrapper">
+		<div class="color color-blue-l"></div>
+		<div class="color color-blue"></div>
+		<div class="color color-blue-d"></div>
 
-		//= templates/header.html
+		<div class="color color-white-l"></div>
+		<div class="color color-white"></div>
 
-		<div id="content">
+		<div class="color color-grey-l"></div>
+		<div class="color color-grey"></div>
+		<div class="color color-grey-d"></div>
 
-				<div class="block row">
-					<h2>Цветовая схема</h2>
-					<div class="color"><div class="color-example bg-color-red-lighten"></div></div>
-					<div class="color"><div class="color-example bg-color-red"></div></div>
-					<div class="color"><div class="color-example bg-color-red-darken"></div></div>
+		<div class="color color-black-l"></div>
+		<div class="color color-black"></div>
+		<div class="color color-black-d"></div>
+	</div>
 
-					<div class="color"><div class="color-example bg-color-blue-lighten"></div></div>
-					<div class="color"><div class="color-example bg-color-blue"></div></div>
-					<div class="color"><div class="color-example bg-color-blue-darken"></div></div>
+</div>
 
-					<div class="color"><div class="color-example bg-color-white"></div></div>
-
-					<div class="color"><div class="color-example bg-color-grey-lighten"></div></div>
-					<div class="color"><div class="color-example bg-color-grey"></div></div>
-					<div class="color"><div class="color-example bg-color-grey-darken"></div></div>
-
-					<div class="color"><div class="color-example bg-color-black-lighten"></div></div>
-					<div class="color"><div class="color-example bg-color-black"></div></div>
-					<div class="color"><div class="color-example bg-color-black-darken"></div></div>
-				</div>
-
-		</div>
-
-		//= templates/footer.html
+//= templates/footer.html

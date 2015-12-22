@@ -1,7 +1,11 @@
+/* ==============================
+	Page structure
+============================== */
+
 body {
 	color: $white;
-	font-size: $font-size;
 	font-family: $font-family;
+	font-size: $font-size;
 	line-height: $line-height;
 	background-color: $black;
 }
@@ -47,10 +51,14 @@ body {
 	}
 }
 
+
+/* ==============================
+	General elements
+============================== */
 .block {
 	margin-bottom: $indent;
 	padding: $indent $indent 0;
-	background-color: $black-lighten;
+	background-color: $black-l;
 	box-sizing: border-box;
 }
 
@@ -61,15 +69,40 @@ body {
 
 .display-block { display: block!important; }
 
+.text-center {
+	text-align: center;
+}
+
+.text-in-line {
+	width: 100%;
+	margin-top: $indent - 2;
+	margin-bottom: $indent - 2;
+	text-align: center;
+	line-height: 0.1em;
+	border-bottom: 1px solid $black;
+
+	span {
+		padding-right: $font-size;
+		padding-left: $font-size;
+		background-color: $black-l;
+	}
+}
+
 .labels-list {
 	float: left;
 	margin-right: $indent / 3;
 	text-align: right;
-	color: $grey-darken;
+	color: $grey-d;
 }
 
 .terms-list {
 	float: left;
+}
+
+.g-recaptcha {
+	// 78 - g-recaptcha source height
+	// 2 - top & bottom border
+	padding-bottom: $indent * 3 - 78 + 2;
 }
 
 .clear-fix:after {
