@@ -64,11 +64,11 @@ body {
 
 .center {
 	@include display-flex();
-	@include flex-direction(row);
 	@include justify-content(center);
 	
 	@include respond-to(small) {
 		@include flex-direction(column);
+		@include align-items(center);
 	}
 }
 
