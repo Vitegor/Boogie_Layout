@@ -22,6 +22,7 @@
 @mixin transform($value) {
 	-webkit-transform: $value;
 	-moz-transform: $value;
+	-ms-transform: $value;
 	-o-transform: $value;
 	transform: $value;
 }
@@ -29,6 +30,7 @@
 @mixin transform-origin($value) {
 	-webkit-transform-origin: $value;
 	-moz-transform-origin: $value;
+	-ms-transform-origin: $value;
 	-o-transform-origin: $value;
 	transform-origin: $value;
 }
@@ -39,6 +41,7 @@
 	-o-transition: $value;
 	transition: $value;
 }
+
 
 /* ==============================
 	Flexbox
