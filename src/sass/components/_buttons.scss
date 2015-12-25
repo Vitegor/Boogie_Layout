@@ -7,12 +7,12 @@
 	@include border-radius($radius);
 	text-align: center;
 	color: $white;
-	font-size: $font-size-small;
+	font-size: $font-size-s;
 	line-height: $indent * 2;
 	background-color: transparent;
 
 	&:hover {
-		cursor: pointer;
+		cursor: pointer; 
 		color: $white-l;
 	}
 
@@ -33,7 +33,7 @@
 		height: $indent;
 		padding: 0 $indent / 2;
 		border-radius: $radius-small;
-		font-size: $font-size-very-small;
+		font-size: $font-size-xs;
 		line-height: $indent;
 	}
 
