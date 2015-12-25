@@ -6,6 +6,7 @@
 	border: 1px solid $grey-d;
 	@include border-radius($radius);
 	text-align: center;
+	white-space: nowrap;
 	color: $white;
 	font-size: $font-size-s;
 	line-height: $indent * 2;

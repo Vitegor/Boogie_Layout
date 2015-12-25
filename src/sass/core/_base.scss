@@ -105,6 +105,11 @@ body {
 
 .g-recaptcha {
 	padding-bottom: $indent * 3 - 78; // 78 - source height of g-recaptcha
+
+	@include respond-to(small) {
+		@include transform(scale(0.80));
+		@include transform-origin(0 0);
+	}
 }
 
 .clear-fix:after {
