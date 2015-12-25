@@ -20,13 +20,13 @@ body {
 	width: 100%; //IE - for margin: 0 auto
 	max-width: 1189px;
 	margin: $indent auto 0;
-}
 
-	#content::after {
+	&::after {
 		content: "";
 		display: block;
 		clear: both;
 	}
+}
 
 #main {
 	float: left;
@@ -79,8 +79,8 @@ body {
 
 .text-in-line {
 	width: 100%;
-	margin-top: $indent - 1;
-	margin-bottom: $indent - 1;
+	margin-top: $indent - 1; //1 - top border
+	margin-bottom: $indent - 1; //1 - bottom border
 	text-align: center;
 	line-height: 0.1em;
 	border-bottom: 1px solid $black;

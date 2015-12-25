@@ -34,14 +34,14 @@
 	.datetime {
 		display: inline-block;
 		margin-bottom: 0;
-		vertical-align: text-top;
+		vertical-align: middle;
 		color: $grey;
 		font-size: $font-size-s;
 	}
 
 	.date { white-space: pre-wrap; }
 	.time { color: $red; }
-	.author { margin-right: 27px; }
+	.author { margin-right: $indent }
 
 	footer {
 		@include display-flex();
@@ -81,8 +81,8 @@
 		@include display-flex();
 		@include flex-direction(column);
 		@include justify-content(flex-end);
-		height: 270px;
-		margin-bottom: 27px;
+		height: $indent * 10;
+		margin-bottom: $indent;
 		background-position: center center;
 	}
 
@@ -90,7 +90,7 @@
 
 	.news-img {
 		overflow: hidden;
-		height: 270px;
+		height: $indent * 10;
 
 		img {
 			width: 885px;

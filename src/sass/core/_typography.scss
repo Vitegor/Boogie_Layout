@@ -1,6 +1,6 @@
 h1 { font-size: 2.5em; }
 
-h2 { 
+h2 {
 	@include h-setting(2em, $indent);
 	@include respond-to(small) { font-size: 1.5em }
 }
@@ -10,7 +10,7 @@ h4 { @include h-setting(1.2em, 9px); }
 
 .page-title { margin-bottom: $indent; }
 
-p { 
+p {
 	padding-bottom: $indent;
 }
 
@@ -25,7 +25,7 @@ a {
 	h3 { color: $grey; }
 	h4 { color: $grey-d; }
 
-	ul, ol { margin-left: 54px; }
+	ul, ol { margin-left: $indent * 2; }
 
 	ul > li,
 	ol > li {
