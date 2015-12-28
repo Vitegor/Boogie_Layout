@@ -2,6 +2,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
+	display: block;
 	width: 100%;
 	box-sizing: border-box;
 	padding: $indent / 1.5;
@@ -9,12 +10,21 @@ textarea {
 	font-family: $font-family;
 	font-size: $font-size;
 	border: none;
-	border-radius: $radius;
+	border-radius: $radius-small;
 	background-color: $black;
 
 	&:focus {
 		outline: 0;
 		background-color: $black-d;
+	}
+
+	&.input-valid {
+		border: 1px solid $green-d;
+	}
+
+	&.input-not-valid {
+		padding-right: $indent * 2;
+		border: 1px solid $red;
 	}
 }
 

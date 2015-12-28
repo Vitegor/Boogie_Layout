@@ -28,12 +28,15 @@
 		<form class="form" action="">
 			<div class="form-section">
 				<label for="nickname">Никнейм:</label>
-				<input id="nickname" type="text" placeholder="Введите никнейм">
+				<input class="input-valid" id="nickname" type="text" placeholder="Введите никнейм">
+				<span class="icon icon-small icon-in-input icon-ok" id="show-password"></span>
 			</div>
 
 			<div class="form-section">
 				<label for="e-mail">E-mail:</label>
-				<input id="e-mail" type="email" placeholder="Введите e-mail">
+				<input class="input-not-valid" id="e-mail" type="email" placeholder="Введите e-mail">
+				<span class="icon icon-small icon-in-input icon-error" id="show-password"></span>
+				<span class="validation-msg-error">Данный email-адрес уже зарегистрирован</span>
 			</div>
 
 			<div class="form-section">

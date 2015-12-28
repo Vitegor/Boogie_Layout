@@ -121,6 +121,22 @@ input.btn {
 	.btn-icon-block {
 		background-color: $color-vk;
 	}
+
+	&:hover {
+		background-color: lighten($color-vk-hover, 5%);
+
+		.btn-icon-block {
+			background-color: lighten($color-vk, 5%);
+		}
+	}
+
+	&:active {
+		background-color: darken($color-vk-hover, 5%);
+
+		.btn-icon-block {
+			background-color: darken($color-vk, 5%);
+		}
+	}
 }
 
 .btn-google-plus {
@@ -128,5 +144,21 @@ input.btn {
 
 	.btn-icon-block {
 		background-color: $color-google-plus;
+	}
+
+	&:hover {
+		background-color: lighten($color-google-plus-hover, 5%);
+
+		.btn-icon-block {
+			background-color: lighten($color-google-plus, 5%);
+		}
+	}
+
+	&:active {
+		background-color: darken($color-google-plus-hover, 5%);
+
+		.btn-icon-block {
+			background-color: darken($color-google-plus, 5%);
+		}
 	}
 }
