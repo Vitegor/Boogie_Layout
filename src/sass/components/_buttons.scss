@@ -18,6 +18,8 @@
 	}
 
 	&:active {
+		position: relative;
+		top: 3px;
 		color: $white;
 	}
 
@@ -52,11 +54,6 @@ input.btn {
 		border-color: $red;
 		background-color: $red;
 	}
-
-	&:active {
-		border-color: $red-d;
-		background-color: $red-d;
-	}
 }
 
 .btn-green {
@@ -68,12 +65,6 @@ input.btn {
 		color: #fff;
 		border-color: $green-l;
 		background-color: $green-l;
-	}
-
-	&:active {
-		color: #fff;
-		border-color: $green-d;
-		background-color: $green-d;
 	}
 }
 
@@ -129,14 +120,6 @@ input.btn {
 			background-color: lighten($color-vk, 5%);
 		}
 	}
-
-	&:active {
-		background-color: darken($color-vk-hover, 5%);
-
-		.btn-icon-block {
-			background-color: darken($color-vk, 5%);
-		}
-	}
 }
 
 .btn-google-plus {
@@ -151,14 +134,6 @@ input.btn {
 
 		.btn-icon-block {
 			background-color: lighten($color-google-plus, 5%);
-		}
-	}
-
-	&:active {
-		background-color: darken($color-google-plus-hover, 5%);
-
-		.btn-icon-block {
-			background-color: darken($color-google-plus, 5%);
 		}
 	}
 }
