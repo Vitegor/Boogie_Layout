@@ -17,8 +17,11 @@
 	left: -18px;
 	float: right;
 
-	&:hover {
-		cursor: pointer;
+	&.icon-eye,
+	&.icon-eye-closed {
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 
