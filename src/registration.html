@@ -4,7 +4,7 @@
 
 	<h2>Регистрация</h2>
 
-	<section class="center registration-socials">
+	<div class="center registration-socials">
 		<div class="btn btn-social btn-vk">
 			<div class="btn-icon-block">
 				<div class="icon icon-vk"></div>
@@ -18,46 +18,44 @@
 			</div>
 			<div class="btn-text-block">Google+</div>
 		</div>
-	</section>
+	</div>
 
 	<div class="text-in-line">
 		<span>или</span>
 	</div>
 
-	<section>
-		<form class="form" action="">
-			<div class="form-section">
-				<label for="nickname">Никнейм:</label>
-				<input class="input-valid" id="nickname" type="text" placeholder="Введите никнейм">
-				<span class="icon icon-small icon-in-input icon-ok" id="show-password"></span>
-			</div>
+	<form class="form" action="">
+		<div class="form-section">
+			<label for="nickname">Никнейм:</label>
+			<input class="input-valid" id="nickname" type="text" placeholder="Введите никнейм">
+			<span class="icon icon-small icon-in-input icon-ok"></span>
+		</div>
 
-			<div class="form-section">
-				<label for="e-mail">E-mail:</label>
-				<input class="input-not-valid" id="e-mail" type="email" placeholder="Введите e-mail">
-				<span class="icon icon-small icon-in-input icon-error" id="show-password"></span>
-				<span class="validation-msg-error">Данный email-адрес уже зарегистрирован</span>
-			</div>
+		<div class="form-section">
+			<label for="e-mail">E-mail:</label>
+			<input class="input-not-valid" id="e-mail" type="email" placeholder="Введите e-mail">
+			<span class="icon icon-small icon-in-input icon-error"></span>
+			<span class="validation-msg-error">Данный email-адрес уже зарегистрирован</span>
+		</div>
 
-			<div class="form-section">
-				<label for="password">Пароль:</label>
-				<input id="password" type="password" value="passwordpassword">
-				<span class="icon icon-small icon-in-input icon-eye" id="show-password"></span>
-			</div>
+		<div class="form-section">
+			<label for="password">Пароль:</label>
+			<input id="password" type="password" value="passwordpassword">
+			<span class="icon icon-small icon-in-input icon-eye" id="show-password"></span>
+		</div>
 
-			<div class="registration-captcha">
-				<div
-					class="g-recaptcha"
-					data-sitekey="6LdDLRMTAAAAABW1bHeXl0z8A5S-aEB7-F8FwUoc"
-					data-theme="dark">
-				</div>
+		<div class="registration-captcha">
+			<div
+				class="g-recaptcha"
+				data-sitekey="6LdDLRMTAAAAABW1bHeXl0z8A5S-aEB7-F8FwUoc"
+				data-theme="dark">
 			</div>
+		</div>
 
-			<div class="center">
-				<input class="btn btn-green" type="submit" value="Зарегистрироваться">
-			</div>
-		</form>
-	</section>
+		<div class="center">
+			<input class="btn btn-green" type="submit" value="Зарегистрироваться">
+		</div>
+	</form>
 
 </div>
 
