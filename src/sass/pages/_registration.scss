@@ -1,25 +1,26 @@
-.registration {
+.registration,
+.login {
 	margin: 0 auto $indent;
 	padding-bottom: $indent;
 
 	h2 {
-		margin-bottom: $indent * 2;
+		margin-bottom: 0;
 		text-align: center;
 	}
+}
 
-	.registration-socials {
-		padding-bottom: $indent;
+.registration-socials {
+	padding-bottom: $indent;
 
-		@include respond-to(small) {
-			padding-bottom: 0;
+	@include respond-to(small) {
+		padding-bottom: 0;
 
-			.btn-social {
-				margin-bottom: $indent;
-			}
+		.btn-social {
+			margin-bottom: $indent;
 		}
 	}
+}
 
-	.registration-captcha {
-		margin-bottom: $indent * 2;
-	}
+.captcha {
+	margin-bottom: $indent;
 }

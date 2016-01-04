@@ -1,9 +1,9 @@
 //= templates/header.html
 
-<div class="col-8 block block-with-header registration">
+<div class="col-8 block block-with-header login">
 
 	<header class="block-header">
-		<h2>Регистрация</h2>
+		<h2>Вход</h2>
 	</header>
 
 	<div class="block-body">
@@ -29,22 +29,15 @@
 
 		<form class="form" action="">
 			<div class="form-section">
-				<label for="nickname">Никнейм:</label>
-				<input class="input-valid" id="nickname" type="text" placeholder="Введите никнейм">
-				<span class="icon icon-small icon-in-input icon-ok"></span>
-			</div>
-
-			<div class="form-section">
 				<label for="e-mail">E-mail:</label>
-				<input class="input-not-valid" id="e-mail" type="email" placeholder="Введите e-mail">
-				<span class="icon icon-small icon-in-input icon-error"></span>
-				<span class="validation-msg-error">Данный email-адрес уже зарегистрирован</span>
+				<input id="e-mail" type="text" placeholder="Введите e-mail">
 			</div>
 
 			<div class="form-section">
-				<label for="password">Пароль:</label>
-				<input id="password" type="password" value="passwordpassword">
-				<span class="icon icon-small icon-in-input icon-eye" id="show-password"></span>
+				<div class="form-section">
+					<label for="password">Пароль:</label>
+					<input id="password" type="password" value="password">
+				</div>
 			</div>
 
 			<div class="captcha">
@@ -56,7 +49,7 @@
 			</div>
 
 			<div class="center">
-				<input class="btn btn-green" type="submit" value="Зарегистрироваться">
+				<input class="btn btn-green" type="submit" value="Войти">
 			</div>
 		</form>
 	</div>

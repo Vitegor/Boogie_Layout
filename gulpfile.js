@@ -46,7 +46,7 @@ var paths = {
 
 var config = {
 	server: { baseDir: paths.build.html },
-	startPath: "registration.html",
+	startPath: "login.html",
 	notify: false
 };
 

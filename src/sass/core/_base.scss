@@ -59,6 +59,23 @@ body {
 	padding: $indent $indent 0;
 	background-color: $black-l;
 	box-sizing: border-box;
+
+	&.block-with-header {
+		padding: 0;
+	}
+}
+
+.block-header {
+	background-color: $black-ll;
+}
+
+.block-body,
+.block-header {
+	padding: $indent;
+}
+
+.block-footer {
+	@extend .block-header;
 }
 
 .center {
