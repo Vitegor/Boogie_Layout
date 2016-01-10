@@ -15,8 +15,8 @@ var paths = {
 	src: {
 		html: 		'src/*.html',
 		style: 		'src/sass/main.scss',
-		//js: 			['src/js/*.js', '!src/js/modulargrid.js'],
-		js: 			'src/js/*.js',
+		js: 			['src/js/*.js', '!src/js/modulargrid.js'],
+		//js: 			'src/js/*.js',
 		img: 			'src/img/**/*.*',
 		content: 	'src/content/**/*.*',
 		fonts: 		'src/fonts/**/*.*'

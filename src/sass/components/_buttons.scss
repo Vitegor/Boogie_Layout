@@ -35,7 +35,7 @@
 	&.btn-small {
 		height: $indent;
 		padding: 0 $indent / 2;
-		border-radius: $radius-small;
+		border-radius: $radius-s;
 		font-size: $font-size-xs;
 		line-height: $indent;
 	}
@@ -76,7 +76,7 @@ input.btn {
 	padding: 0;
 	line-height: 100%;
 	border: none;
-	@include border-radius-right($radius-small);
+	@include border-radius-right($radius-s);
 
 	.btn-icon-block,
 	.btn-text-block {
@@ -86,7 +86,7 @@ input.btn {
 
 	.btn-icon-block {
 		width: $indent * 2;
-		@include border-radius-left($radius-small);
+		@include border-radius-left($radius-s);
 	}
 
 	.btn-text-block {
