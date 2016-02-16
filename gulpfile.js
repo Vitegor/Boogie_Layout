@@ -46,7 +46,7 @@ var paths = {
 
 var config = {
 	server: { baseDir: paths.build.html },
-	startPath: "login.html",
+	startPath: "admin_add_news.html",
 	notify: false
 };
 
