@@ -4,7 +4,7 @@
 	height: $indent * 2;
 	padding: 0 $indent;
 	border: 1px solid $grey-d;
-	@include border-radius($radius);
+	@include border-radius($radius-s);
 	text-align: center;
 	white-space: nowrap;
 	color: $white;
@@ -135,5 +135,11 @@ input.btn {
 		.btn-icon-block {
 			background-color: lighten($color-google-plus, 5%);
 		}
+	}
+}
+
+#ascrail2000 { //main scroll
+	@include respond-to(large) {
+		display: none !important;
 	}
 }

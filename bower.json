@@ -17,11 +17,15 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "jquery.nicescroll": "~3.6.7"
   },
   "overrides": {
     "jquery": {
       "main": "dist/jquery.min.js"
+    },
+    "jquery.nicescroll": {
+      "main": "jquery.nicescroll.min.js"
     }
   }
 }

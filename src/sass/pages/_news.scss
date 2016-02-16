@@ -14,22 +14,6 @@
 
 	.news-tags { margin-bottom: 17px; }
 
-	.tag {
-		display: inline-block;
-		height: $indent;
-		margin-right: 5px;
-		margin-bottom: 10px;
-		padding-right: 15px;
-		padding-left: 15px;
-		vertical-align: middle;
-		color: $grey;
-		font-size: $font-size-s;
-		border-bottom: none;
-		background-color: #343434;
-
-		&:hover { background-color: $black; }
-	}
-
 	.author,
 	.datetime {
 		display: inline-block;
@@ -115,4 +99,20 @@
 		padding-right: $indent;
 		padding-left: $indent;
 	}
+}
+
+.tag {
+	display: inline-block;
+	height: $indent;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	vertical-align: middle;
+	color: $grey;
+	font-size: $font-size-s;
+	border-bottom: none;
+	background-color: #343434;
+
+	&:hover { background-color: $black; }
 }

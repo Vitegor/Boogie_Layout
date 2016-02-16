@@ -2,4 +2,54 @@
 
 <h2>Добавить новость</h2>
 
+<div class="block block-body">
+	<form class="form" action="">
+
+		<div class="form-section">
+			<label for="title">Заголовок:</label>
+			<input id="title" type="text">
+		</div>
+
+		<div class="form-section">
+			<label for="announce">Анонс:</label>
+			<textarea id="announce" rows="5">
+				Нейрофизиологи из Канады и Франции впервые в мире обнаружили нервные механизмы, регулирующие развитие депрессии. Результаты исследований авторы опубликовали в журнале Nature Neuroscience, а кратко о них сообщается на сайте Университета Макгилла.
+			</textarea>
+		</div>
+
+		<div class="form-section">
+			<label for="body">Текст:</label>
+			<textarea id="body" rows="10">
+				Нейрофизиологи из Канады и Франции впервые в мире обнаружили нервные механизмы, регулирующие развитие депрессии. Результаты исследований авторы опубликовали в журнале Nature Neuroscience, а кратко о них сообщается на сайте Университета Макгилла.
+
+				В своей работе ученые пришли к двум выводам. Во-первых, ученые на примере имитации стрессовых ситуаций у животных показали, что увеличение активности дофаминергических нейронов соответствует депрессии. Во-вторых, другой тип нейронов (норадренергических) контролирует первые.
+
+				У первого типа нейронов основным нейротрансмиттером (веществом, при помощи которого осуществляется передача электрического импульса) выступает дофамин, а у вторых — норадреналин. Этот белок принимает участие в эмоциональной регуляции, сне и расстройствах настроения.
+			</textarea>
+		</div>
+
+		<div class="form-section">
+			<label for="">Тэги</label>
+			<div class="news-tags">
+				<span class="tag">Разное</span>
+				<span class="tag">Анонсы</span>
+				<span class="tag">За жизнь</span>
+				<a href="" class="link link-blue">+ Добавить тэг</a>
+			</div>
+		</div>
+
+		<div class="form-section">
+			<div class="checkbox">
+				<input type="checkbox" id="checkbox1">
+				<label for="checkbox1"></label>
+				<span>Опубликовать</span>
+			</div>
+		</div>
+
+		<div class="center">
+			<input class="btn btn-green" type="submit" value="Добавить">
+		</div>
+	</form>
+</div>
+
 //= templates/footer.html
