@@ -15,8 +15,10 @@ var textareaSettings = {
   cursorwidth: '8px'
 }
 
-for(var p in generalSettings) htmlSettings[p] = generalSettings[p];
-for(var p in generalSettings) textareaSettings[p] = generalSettings[p];
+for (var p in generalSettings) {
+  htmlSettings[p] = generalSettings[p];
+  textareaSettings[p] = generalSettings[p];
+}
 
 $('html').niceScroll(htmlSettings);
 $('textarea').niceScroll(textareaSettings);
