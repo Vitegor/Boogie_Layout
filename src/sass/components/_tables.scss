@@ -1,0 +1,30 @@
+table {
+
+  width: 100%;
+
+  th {
+    font-weight: bold;
+  }
+
+  th, td {
+    padding: 13px;
+    border: 1px solid $black-ll;
+  }
+
+  &.table {
+    tr {
+      &:hover {
+        background-color: $black;
+      }
+    }
+
+    th, td {
+      border-right: none;
+      border-left: none;
+    }
+
+    .label {
+      height: calc(#{$indent} - 1px);
+    }
+  }
+}
