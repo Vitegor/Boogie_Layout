@@ -15,8 +15,8 @@ var paths = {
 	src: {
 		html: 		'src/*.html',
 		style: 		'src/sass/main.scss',
-		js: 			['src/js/*.js', '!src/js/modulargrid.js'],
-		//js: 			'src/js/*.js',
+		//js: 			['src/js/*.js', '!src/js/modulargrid.js'],
+		js: 			'src/js/*.js',
 		img: 			'src/img/**/*.*',
 		content: 	'src/content/**/*.*',
 		fonts: 		'src/fonts/**/*.*'
@@ -46,7 +46,7 @@ var paths = {
 
 var config = {
 	server: { baseDir: paths.build.html },
-	startPath: "admin_add_news.html",
+	startPath: "admin_news.html",
 	notify: false
 };
 

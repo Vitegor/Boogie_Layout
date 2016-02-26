@@ -1,22 +1,28 @@
 .link {
-	color: $grey-l;
+  color: $grey-l;
 
-	&:hover {
-		border-bottom: 1px dashed $grey-l;
-	}
+  &:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px dashed $grey-l;
+  }
 
-	&:active {
-		color: $grey-d;
-		border-bottom-color: $grey-d;
-	}
+  &:active {
+    color: $grey-d;
+    border-bottom-color: $grey-d;
+  }
 
-	&.link-blue {
-		color: $blue;
-		border-bottom-color: $blue;
+  &.link-blue {
+    color: $blue-l;
+    border-bottom-color: $blue;
 
-		&:active {
-			color: $blue-d;
-			border-bottom-color: $blue-d;
-		}
-	}
+    &.hover {
+      color: $blue-ll;
+      border-bottom-color: $blue-ll;
+    }
+
+    &:active {
+      color: $blue;
+      border-bottom-color: $blue;
+    }
+  }
 }

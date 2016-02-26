@@ -1,145 +1,150 @@
 .btn {
-	display: inline-block;
-	box-sizing: border-box;
-	height: $indent * 2;
-	padding: 0 $indent;
-	border: 1px solid $grey-d;
-	@include border-radius($radius-s);
-	text-align: center;
-	white-space: nowrap;
-	color: $white;
-	font-size: $font-size-s;
-	line-height: $indent * 2;
-	background-color: transparent;
+  display: inline-block;
+  box-sizing: border-box;
+  height: $indent * 2;
+  padding: 0 $indent;
+  border: 1px solid $grey-d;
+  text-align: center;
+  white-space: nowrap;
+  color: $white;
+  font-size: $font-size-s;
+  line-height: $indent * 2;
+  background-color: transparent;
 
-	&:hover {
-		cursor: pointer; 
-		color: $white-l;
-	}
+  @include border-radius($radius-s);
 
-	&:active {
-		position: relative;
-		top: 3px;
-		color: white;
-	}
+  &:hover {
+    cursor: pointer;
+    color: $white-l;
+  }
 
-	&:focus {
-		outline: 0;
-	}
+  &:active {
+    position: relative;
+    top: 2px;
+  }
 
-	&.btn-medium {
-		height: $indent * 1.5;
-		margin-bottom: $indent * 2 - $indent * 1.5;
-	}
+  &:focus {
+    outline: 0;
+  }
 
-	&.btn-small {
-		height: $indent;
-		padding: 0 $indent / 2;
-		border-radius: $radius-s;
-		font-size: $font-size-xs;
-		line-height: $indent;
-	}
+  &.btn-medium {
+    height: $indent * 1.5;
+    margin-bottom: $indent * 2 - $indent * 1.5;
+  }
 
-	@include respond-to(small) {
-		width: 100%;
-	}
+  &.btn-small {
+    height: $indent;
+    padding: 0 $indent / 2;
+    border-radius: $radius-s;
+    font-size: $font-size-xs;
+    line-height: $indent;
+
+    &:focus {
+      top: 1px;
+    }
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+  }
+
+  @include respond-to(small) {
+    width: 100%;
+  }
 }
 
 input.btn {
-	line-height: 100%;
+  line-height: 100%;
 }
 
 .btn-red {
-	&:hover {
-		border-color: $red;
-		background-color: $red;
-	}
+  @include btn-color($red, $red-l, $red-d);
 }
 
 .btn-green {
-	color: #fff;
-	border-color: $green;
-	background-color: $green;
+  @include btn-color($green, $green-l, $green-d);
+}
 
-	&:hover {
-		color: #fff;
-		border-color: $green-l;
-		background-color: $green-l;
-	}
+.btn-blue {
+  @include btn-color($blue, $blue-l, $blue-d);
+}
+
+.btn-orange {
+  @include btn-color($orange, $orange-l, $orange-d);
 }
 
 .btn-social {
-	display: table;
-	float: left;
-	margin-right: $indent / 2;
-	margin-left: $indent / 2;
-	padding: 0;
-	line-height: 100%;
-	border: none;
-	@include border-radius-right($radius-s);
+  display: table;
+  float: left;
+  margin-right: $indent / 2;
+  margin-left: $indent / 2;
+  padding: 0;
+  line-height: 100%;
+  border: none;
+  @include border-radius-right($radius-s);
 
-	.btn-icon-block,
-	.btn-text-block {
-		display: table-cell;
-		vertical-align: middle;
-	}
+  .btn-icon-block,
+  .btn-text-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
-	.btn-icon-block {
-		width: $indent * 2;
-		@include border-radius-left($radius-s);
-	}
+  .btn-icon-block {
+    width: $indent * 2;
+    @include border-radius-left($radius-s);
+  }
 
-	.btn-text-block {
-		display: table-cell;
-		padding-left: $indent;
-		padding-right: $indent;
-		font-size: $font-size;
-		color: #fff;
-	}
+  .btn-text-block {
+    display: table-cell;
+    padding-left: $indent;
+    padding-right: $indent;
+    font-size: $font-size;
+    color: #fff;
+  }
 
-	@include respond-to(small) {
-		margin: 0;
+  @include respond-to(small) {
+    margin: 0;
 
-		.btn-text-block {
-			padding: 0;
-		}
-	}
+    .btn-text-block {
+      padding: 0;
+    }
+  }
 }
 
 .btn-vk {
-	background-color: $color-vk-hover;
+  background-color: $color-vk-hover;
 
-	.btn-icon-block {
-		background-color: $color-vk;
-	}
+  .btn-icon-block {
+    background-color: $color-vk;
+  }
 
-	&:hover {
-		background-color: lighten($color-vk-hover, 5%);
+  &:hover {
+    background-color: lighten($color-vk-hover, 5%);
 
-		.btn-icon-block {
-			background-color: lighten($color-vk, 5%);
-		}
-	}
+    .btn-icon-block {
+      background-color: lighten($color-vk, 5%);
+    }
+  }
 }
 
 .btn-google-plus {
-	background-color: $color-google-plus-hover;
+  background-color: $color-google-plus-hover;
 
-	.btn-icon-block {
-		background-color: $color-google-plus;
-	}
+  .btn-icon-block {
+    background-color: $color-google-plus;
+  }
 
-	&:hover {
-		background-color: lighten($color-google-plus-hover, 5%);
+  &:hover {
+    background-color: lighten($color-google-plus-hover, 5%);
 
-		.btn-icon-block {
-			background-color: lighten($color-google-plus, 5%);
-		}
-	}
+    .btn-icon-block {
+      background-color: lighten($color-google-plus, 5%);
+    }
+  }
 }
 
 #ascrail2000 { //main scroll
-	@include respond-to(large) {
-		display: none !important;
-	}
+  @include respond-to(large) {
+    display: none !important;
+  }
 }

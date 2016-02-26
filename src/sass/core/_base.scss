@@ -1,138 +1,137 @@
 /* ==============================
-	Page structure
+  Page structure
 ============================== */
 body {
-	color: $white;
-	font-family: $font-family;
-	font-size: $font-size;
-	line-height: $line-height;
-	background-color: $black;
+  color: $white;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  background-color: $black;
 }
 
 #wrapper {
-	@include display-flex();
-	@include flex-direction(column);
-	height: 100vh;
+  @include display-flex();
+  @include flex-direction(column);
+  height: 100vh;
 }
 
 #content {
-	flex: 1 0 auto;
-	width: 100%; //IE - for margin: 0 auto
-	max-width: 1189px;
-	margin: $indent auto 0;
+  flex: 1 0 auto;
+  width: 100%; //IE - for margin: 0 auto
+  max-width: 1189px;
+  margin: $indent auto 0;
 
-	&::after {
-		content: "";
-		display: block;
-		clear: both;
-	}
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 #main {
-	float: left;
-	width: calc(100% - 27px - 277px);
+  float: left;
+  width: calc(100% - 27px - 277px);
 
-	@include respond-to(medium) {
-		float: none;
-		width: 100%;
-	}
+  @include respond-to(medium) {
+    float: none;
+    width: 100%;
+  }
 }
 
 #sidebar {
-	float: right;
-	width: 277px;
-	margin-left: $indent;
+  float: right;
+  width: 277px;
+  margin-left: $indent;
 
-	@include respond-to(medium) {
-		float: none;
-		width: 100%;
-		margin-left: 0;
-	}
+  @include respond-to(medium) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 
 /* ==============================
-	General elements
+  General elements
 ============================== */
 .block {
-	margin-bottom: $indent;
-	padding: $indent $indent 0;
-	background-color: $black-l;
-	box-sizing: border-box;
+  margin-bottom: $indent;
+  padding: $indent $indent 0;
+  background-color: $black-l;
+  box-sizing: border-box;
 
-	&.block-with-header {
-		padding: 0;
-	}
+  &.block-with-header {
+    padding: 0;
+  }
 }
 
 .block-header {
-	background-color: $black-ll;
+  background-color: $black-ll;
 }
 
 .block-body,
 .block-header {
-	padding: $indent;
+  padding: $indent;
 }
 
 .block-footer {
-	@extend .block-header;
+  @extend .block-header;
 }
 
 .center {
-	@include display-flex();
-	@include justify-content(center);
-	
-	@include respond-to(small) {
-		@include flex-direction(column);
-		@include align-items(center);
-	}
+  @include display-flex();
+  @include justify-content(center);
+  
+  @include respond-to(small) {
+    @include flex-direction(column);
+    @include align-items(center);
+  }
 }
 
 .display-block { display: block!important; }
 
-.text-center {
-	text-align: center;
-}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 .text-in-line {
-	width: 100%;
-	margin-top: $indent - 1; //1 - top border
-	margin-bottom: $indent - 1; //1 - bottom border
-	text-align: center;
-	line-height: 0.1em;
-	border-bottom: 1px solid $black;
+  width: 100%;
+  margin-top: $indent - 1; //1 - top border
+  margin-bottom: $indent - 1; //1 - bottom border
+  text-align: center;
+  line-height: 0.1em;
+  border-bottom: 1px solid $black;
 
-	span {
-		padding-right: $font-size;
-		padding-left: $font-size;
-		background-color: $black-l;
-	}
+  span {
+    padding-right: $font-size;
+    padding-left: $font-size;
+    background-color: $black-l;
+  }
 }
 
 .labels-list {
-	float: left;
-	margin-right: $indent / 3;
-	text-align: right;
-	color: $grey-d;
+  float: left;
+  margin-right: $indent / 3;
+  text-align: right;
+  color: $grey-d;
 }
 
 .terms-list {
-	float: left;
+  float: left;
 }
 
 .g-recaptcha {
-	padding-bottom: $indent * 3 - 78; // 78 - source height of g-recaptcha
+  padding-bottom: $indent * 3 - 78; // 78 - source height of g-recaptcha
 
-	@include respond-to(small) {
-		@include transform(scale(0.80));
-		@include transform-origin(0 0);
-	}
+  @include respond-to(small) {
+    @include transform(scale(0.80));
+    @include transform-origin(0 0);
+  }
 }
 
 .clear-fix:after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0px;
-	visibility: hidden;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden;
 }

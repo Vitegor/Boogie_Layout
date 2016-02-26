@@ -1,5 +1,5 @@
 /* ==============================
-	Typography
+  Typography
 ============================== */
 $font-size: 16px;
 $font-size-s: 14px;
@@ -8,23 +8,24 @@ $font-family: "Ubuntu", sans-serif;
 
 
 /* ==============================
-	Colors
+  Colors
 ============================== */
 $red: #833;
-$red-l: lighten($red, 10%);
+$red-l: lighten($red, 7%);
 $red-d: darken($red, 5%);
 
 $orange: #885d33;
-$orange-l: lighten($orange, 10%);
+$orange-l: lighten($orange, 8%);
 $orange-d: darken($orange, 5%);
 
 $green: #338848;
 $green-l: lighten($green, 5%);
 $green-d: darken($green, 5%);
 
-$blue: #296ddb;
-$blue-l: lighten($blue, 12%);
-$blue-d: darken($blue, 15%);
+$blue: #345e89;
+$blue-l: lighten($blue, 8%);
+$blue-ll: lighten($blue-l, 5%);
+$blue-d: darken($blue, 6%);
 
 $grey: #808080;
 $grey-l: #999;
@@ -48,7 +49,7 @@ $color-google-plus-active: $color-google-plus;
 
 
 /* ==============================
-	Sizes
+  Sizes
 ============================== */
 $content-width: 1141px;
 $indent: 27px;
@@ -61,7 +62,7 @@ $screen-large: 1024px;
 
 
 /* ==============================
-	Radiuses
+  Radiuses
 ============================== */
 $radius: 4px;
 $radius-s: 2px;

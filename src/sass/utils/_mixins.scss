@@ -1,3 +1,6 @@
+/* ==============================
+  General
+============================== */
 @mixin h-setting ($font-size, $margin-bottom) {
   margin-bottom: $margin-bottom;
   font-size: $font-size;
@@ -85,5 +88,39 @@
 
   @if $media == large {
     @media screen and (max-width: $screen-large) { @content; }
+  }
+}
+
+
+/* ==============================
+  Buttons
+============================== */
+@mixin btn-color($color-main, $color-hover, $color-active) {
+  color: $white-l;
+  border-color: $color-main;
+  background-color: $color-main;
+
+  &:hover {
+    border-color: $color-hover;
+    background-color: $color-hover;
+  }
+
+  &:active {
+    color: $white;
+    border-color: $color-active;
+    background-color: $color-active;
+  }
+
+  &.btn-transparent {
+    border-color: $grey-d;
+
+    &:hover {
+      border-color: $color-main;
+      background-color: $color-main;
+    }
+
+    &:active {
+      border-color: $color-main;
+    }
   }
 }
