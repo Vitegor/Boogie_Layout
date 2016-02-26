@@ -88,6 +88,12 @@ body {
   }
 }
 
+.center-col {
+  @include display-flex();
+  @include flex-direction(column);
+  @include align-items(center);
+}
+
 .display-block { display: block!important; }
 
 .text-center { text-align: center; }

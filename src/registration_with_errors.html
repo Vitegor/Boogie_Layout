@@ -1,0 +1,68 @@
+//= templates/header.html
+
+<div class="block block-with-header registration">
+
+  <header class="block-header">
+    <h2>Регистрация</h2>
+  </header>
+
+  <div class="block-body row">
+
+    <div class="col-1-2">
+      <form class="form" action="">
+        <div class="form-section">
+          <label for="nickname">Никнейм:</label>
+          <input class="input-valid" id="nickname" type="text" placeholder="Введите никнейм">
+          <span class="icon icon-small icon-in-input icon-ok"></span>
+        </div>
+
+        <div class="form-section">
+          <label for="e-mail">E-mail:</label>
+          <input class="input-not-valid" id="e-mail" type="email" placeholder="Введите e-mail">
+          <span class="icon icon-small icon-in-input icon-error"></span>
+          <span class="validation-msg-error">Данный email-адрес уже зарегистрирован</span>
+        </div>
+
+        <div class="form-section">
+          <label for="password">Пароль:</label>
+          <input id="password" type="password" value="passwordpassword">
+          <span class="icon icon-small icon-in-input icon-eye" id="show-password"></span>
+        </div>
+
+        <div class="captcha">
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LdDLRMTAAAAABW1bHeXl0z8A5S-aEB7-F8FwUoc"
+            data-theme="dark">
+          </div>
+        </div>
+
+        <div class="center">
+          <input class="btn btn-green" type="submit" value="Зарегистрироваться">
+        </div>
+      </form>
+    </div>
+
+    <div class="col-1-2">
+      <div class="center registration-socials">
+        <div class="btn btn-social btn-vk">
+          <div class="btn-icon-block">
+            <div class="icon icon-vk"></div>
+          </div>
+          <div class="btn-text-block">ВКонтакте</div>
+        </div>
+
+        <div class="btn btn-social btn-google-plus">
+          <div class="btn-icon-block">
+            <div class="icon icon-google-plus"></div>
+          </div>
+          <div class="btn-text-block">Google+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+//= templates/footer.html

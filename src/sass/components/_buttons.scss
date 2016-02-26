@@ -76,8 +76,6 @@ input.btn {
 .btn-social {
   display: table;
   float: left;
-  margin-right: $indent / 2;
-  margin-left: $indent / 2;
   padding: 0;
   line-height: 100%;
   border: none;
@@ -103,6 +101,7 @@ input.btn {
   }
 
   @include respond-to(small) {
+    width: 100%;
     margin: 0;
 
     .btn-text-block {
